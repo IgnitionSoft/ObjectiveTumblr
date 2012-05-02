@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMockObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMockObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMockObject/mockForClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mockForClass:(Class)aClass</Declaration>
+			
+			
+			<Anchor>//api/name/mockForClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMockObject/mockForProtocol:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mockForProtocol:(Protocol *)aProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/mockForProtocol:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMockObject/partialMockForObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)partialMockForObject:(NSObject *)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/partialMockForObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMockObject/niceMockForClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)niceMockForClass:(Class)aClass</Declaration>
+			
+			
+			<Anchor>//api/name/niceMockForClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMockObject/niceMockForProtocol:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)niceMockForProtocol:(Protocol *)aProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/niceMockForProtocol:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMockObject/observerMock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)observerMock</Declaration>
+			
+			
+			<Anchor>//api/name/observerMock</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/setExpectationOrderMatters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)setExpectationOrderMatters:(BOOL)flag</Declaration>
+			
+			
+			<Anchor>//api/name/setExpectationOrderMatters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/stub</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)stub</Declaration>
+			
+			
+			<Anchor>//api/name/stub</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/expect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)expect</Declaration>
+			
+			
+			<Anchor>//api/name/expect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/reject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)reject</Declaration>
+			
+			
+			<Anchor>//api/name/reject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/verify</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)verify</Declaration>
+			
+			
+			<Anchor>//api/name/verify</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/getNewRecorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)getNewRecorder</Declaration>
+			
+			
+			<Anchor>//api/name/getNewRecorder</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/handleInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/handleInvocation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockObject/handleUnRecordedInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleUnRecordedInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/handleUnRecordedInvocation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

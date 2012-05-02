@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RSOAuthEngine.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RSOAuthEngine</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setTokenType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RSOAuthTokenType tokenType</Declaration>
+			
+			
+			<Anchor>//api/name/tokenType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/tokenType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RSOAuthTokenType tokenType</Declaration>
+			
+			
+			<Anchor>//api/name/tokenType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setSignatureMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RSOAuthSignatureMethod signatureMethod</Declaration>
+			
+			
+			<Anchor>//api/name/signatureMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/signatureMethod</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RSOAuthSignatureMethod signatureMethod</Declaration>
+			
+			
+			<Anchor>//api/name/signatureMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setConsumerKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/consumerKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setConsumerSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/consumerSecret</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setCallbackURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *callbackURL</Declaration>
+			
+			
+			<Anchor>//api/name/callbackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/callbackURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *callbackURL</Declaration>
+			
+			
+			<Anchor>//api/name/callbackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/token</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setTokenSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/tokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/tokenSecret</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/tokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setVerifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *verifier</Declaration>
+			
+			
+			<Anchor>//api/name/verifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RSOAuthEngine/verifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *verifier</Declaration>
+			
+			
+			<Anchor>//api/name/verifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHostName:(NSString *)hostName customHeaderFields:(NSDictionary *)headers signatureMethod:(RSOAuthSignatureMethod)signatureMethod consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret callbackURL:(NSString *)callbackURL</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHostName:(NSString *)hostName customHeaderFields:(NSDictionary *)headers signatureMethod:(RSOAuthSignatureMethod)signatureMethod consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/isAuthenticated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isAuthenticated</Declaration>
+			
+			
+			<Anchor>//api/name/isAuthenticated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/resetOAuthToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetOAuthToken</Declaration>
+			
+			
+			<Anchor>//api/name/resetOAuthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/customValueForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)customValueForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/customValueForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/fillTokenWithResponseBody:type:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)fillTokenWithResponseBody:(NSString *)body type:(RSOAuthTokenType)tokenType</Declaration>
+			
+			
+			<Anchor>//api/name/fillTokenWithResponseBody:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/setAccessToken:secret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)setAccessToken:(NSString *)token secret:(NSString *)tokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/setAccessToken:secret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/signRequest:signOnlyWithOAuthParams:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)signRequest:(MKNetworkOperation *)request signOnlyWithOAuthParams:(BOOL)onlyOAuth</Declaration>
+			
+			
+			<Anchor>//api/name/signRequest:signOnlyWithOAuthParams:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/enqueueSignedOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueSignedOperation:(MKNetworkOperation *)op</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueSignedOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RSOAuthEngine/enqueueSignedOperation:signOnlyWithOAuthParams:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RSOAuthEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueSignedOperation:(MKNetworkOperation *)op signOnlyWithOAuthParams:(BOOL)onlyOAuth</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueSignedOperation:signOnlyWithOAuthParams:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

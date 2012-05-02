@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMRealObjectForwarder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMRealObjectForwarder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMRealObjectForwarder.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMRealObjectForwarder/handleInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMRealObjectForwarder.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/handleInvocation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

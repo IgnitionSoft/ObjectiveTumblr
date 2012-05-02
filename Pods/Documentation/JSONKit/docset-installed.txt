@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/siuying/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.JSONKit-1.4.docset
+Time: 2012-05-02 14:12:54 +0000

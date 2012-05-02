@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RSOAuthEngine Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RSOAuthEngine 1.0.0 </a></h1>
+				<a id="developerHome" href="../index.html">Rodrigo Sieiro</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RSOAuthEngine Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/callbackURL">&nbsp;&nbsp;&nbsp;&nbsp;callbackURL</option>
+	
+	<option value="//api/name/consumerKey">&nbsp;&nbsp;&nbsp;&nbsp;consumerKey</option>
+	
+	<option value="//api/name/consumerSecret">&nbsp;&nbsp;&nbsp;&nbsp;consumerSecret</option>
+	
+	<option value="//api/name/signatureMethod">&nbsp;&nbsp;&nbsp;&nbsp;signatureMethod</option>
+	
+	<option value="//api/name/token">&nbsp;&nbsp;&nbsp;&nbsp;token</option>
+	
+	<option value="//api/name/tokenSecret">&nbsp;&nbsp;&nbsp;&nbsp;tokenSecret</option>
+	
+	<option value="//api/name/tokenType">&nbsp;&nbsp;&nbsp;&nbsp;tokenType</option>
+	
+	<option value="//api/name/verifier">&nbsp;&nbsp;&nbsp;&nbsp;verifier</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/customValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- customValueForKey:</option>
+	
+	<option value="//api/name/enqueueSignedOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- enqueueSignedOperation:</option>
+	
+	<option value="//api/name/enqueueSignedOperation:signOnlyWithOAuthParams:">&nbsp;&nbsp;&nbsp;&nbsp;- enqueueSignedOperation:signOnlyWithOAuthParams:</option>
+	
+	<option value="//api/name/fillTokenWithResponseBody:type:">&nbsp;&nbsp;&nbsp;&nbsp;- fillTokenWithResponseBody:type:</option>
+	
+	<option value="//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:</option>
+	
+	<option value="//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:</option>
+	
+	<option value="//api/name/isAuthenticated">&nbsp;&nbsp;&nbsp;&nbsp;- isAuthenticated</option>
+	
+	<option value="//api/name/resetOAuthToken">&nbsp;&nbsp;&nbsp;&nbsp;- resetOAuthToken</option>
+	
+	<option value="//api/name/setAccessToken:secret:">&nbsp;&nbsp;&nbsp;&nbsp;- setAccessToken:secret:</option>
+	
+	<option value="//api/name/signRequest:signOnlyWithOAuthParams:">&nbsp;&nbsp;&nbsp;&nbsp;- signRequest:signOnlyWithOAuthParams:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/callbackURL">callbackURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/consumerKey">consumerKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/consumerSecret">consumerSecret</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signatureMethod">signatureMethod</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/token">token</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tokenSecret">tokenSecret</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tokenType">tokenType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verifier">verifier</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customValueForKey:">customValueForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enqueueSignedOperation:">enqueueSignedOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enqueueSignedOperation:signOnlyWithOAuthParams:">enqueueSignedOperation:signOnlyWithOAuthParams:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fillTokenWithResponseBody:type:">fillTokenWithResponseBody:type:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:">initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:">initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAuthenticated">isAuthenticated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetOAuthToken">resetOAuthToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAccessToken:secret:">setAccessToken:secret:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signRequest:signOnlyWithOAuthParams:">signRequest:signOnlyWithOAuthParams:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RSOAuthEngine Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RSOAuthEngine Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">MKNetworkEngine</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RSOAuthEngine.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tokenType">&nbsp;&nbsp;tokenType</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signatureMethod">&nbsp;&nbsp;signatureMethod</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/consumerKey">&nbsp;&nbsp;consumerKey</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/consumerSecret">&nbsp;&nbsp;consumerSecret</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/callbackURL">&nbsp;&nbsp;callbackURL</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/token">&nbsp;&nbsp;token</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tokenSecret">&nbsp;&nbsp;tokenSecret</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verifier">&nbsp;&nbsp;verifier</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:">&ndash;&nbsp;initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:">&ndash;&nbsp;initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAuthenticated">&ndash;&nbsp;isAuthenticated</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetOAuthToken">&ndash;&nbsp;resetOAuthToken</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/customValueForKey:">&ndash;&nbsp;customValueForKey:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fillTokenWithResponseBody:type:">&ndash;&nbsp;fillTokenWithResponseBody:type:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAccessToken:secret:">&ndash;&nbsp;setAccessToken:secret:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signRequest:signOnlyWithOAuthParams:">&ndash;&nbsp;signRequest:signOnlyWithOAuthParams:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enqueueSignedOperation:">&ndash;&nbsp;enqueueSignedOperation:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enqueueSignedOperation:signOnlyWithOAuthParams:">&ndash;&nbsp;enqueueSignedOperation:signOnlyWithOAuthParams:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/callbackURL" title="callbackURL"></a>
+	<h3 class="subsubtitle method-title">callbackURL</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *callbackURL</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/consumerKey" title="consumerKey"></a>
+	<h3 class="subsubtitle method-title">consumerKey</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *consumerKey</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/consumerSecret" title="consumerSecret"></a>
+	<h3 class="subsubtitle method-title">consumerSecret</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *consumerSecret</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signatureMethod" title="signatureMethod"></a>
+	<h3 class="subsubtitle method-title">signatureMethod</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) RSOAuthSignatureMethod signatureMethod</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/token" title="token"></a>
+	<h3 class="subsubtitle method-title">token</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *token</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tokenSecret" title="tokenSecret"></a>
+	<h3 class="subsubtitle method-title">tokenSecret</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *tokenSecret</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tokenType" title="tokenType"></a>
+	<h3 class="subsubtitle method-title">tokenType</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) RSOAuthTokenType tokenType</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verifier" title="verifier"></a>
+	<h3 class="subsubtitle method-title">verifier</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *verifier</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/customValueForKey:" title="customValueForKey:"></a>
+	<h3 class="subsubtitle method-title">customValueForKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)customValueForKey:(NSString *)<em>key</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enqueueSignedOperation:" title="enqueueSignedOperation:"></a>
+	<h3 class="subsubtitle method-title">enqueueSignedOperation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)enqueueSignedOperation:(MKNetworkOperation *)<em>op</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enqueueSignedOperation:signOnlyWithOAuthParams:" title="enqueueSignedOperation:signOnlyWithOAuthParams:"></a>
+	<h3 class="subsubtitle method-title">enqueueSignedOperation:signOnlyWithOAuthParams:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)enqueueSignedOperation:(MKNetworkOperation *)<em>op</em> signOnlyWithOAuthParams:(BOOL)<em>onlyOAuth</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fillTokenWithResponseBody:type:" title="fillTokenWithResponseBody:type:"></a>
+	<h3 class="subsubtitle method-title">fillTokenWithResponseBody:type:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)fillTokenWithResponseBody:(NSString *)<em>body</em> type:(RSOAuthTokenType)<em>tokenType</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:" title="initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:"></a>
+	<h3 class="subsubtitle method-title">initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithHostName:(NSString *)<em>hostName</em> customHeaderFields:(NSDictionary *)<em>headers</em> signatureMethod:(RSOAuthSignatureMethod)<em>signatureMethod</em> consumerKey:(NSString *)<em>consumerKey</em> consumerSecret:(NSString *)<em>consumerSecret</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:" title="initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:"></a>
+	<h3 class="subsubtitle method-title">initWithHostName:customHeaderFields:signatureMethod:consumerKey:consumerSecret:callbackURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithHostName:(NSString *)<em>hostName</em> customHeaderFields:(NSDictionary *)<em>headers</em> signatureMethod:(RSOAuthSignatureMethod)<em>signatureMethod</em> consumerKey:(NSString *)<em>consumerKey</em> consumerSecret:(NSString *)<em>consumerSecret</em> callbackURL:(NSString *)<em>callbackURL</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isAuthenticated" title="isAuthenticated"></a>
+	<h3 class="subsubtitle method-title">isAuthenticated</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isAuthenticated</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetOAuthToken" title="resetOAuthToken"></a>
+	<h3 class="subsubtitle method-title">resetOAuthToken</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)resetOAuthToken</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAccessToken:secret:" title="setAccessToken:secret:"></a>
+	<h3 class="subsubtitle method-title">setAccessToken:secret:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setAccessToken:(NSString *)<em>token</em> secret:(NSString *)<em>tokenSecret</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signRequest:signOnlyWithOAuthParams:" title="signRequest:signOnlyWithOAuthParams:"></a>
+	<h3 class="subsubtitle method-title">signRequest:signOnlyWithOAuthParams:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)signRequest:(MKNetworkOperation *)<em>request</em> signOnlyWithOAuthParams:(BOOL)<em>onlyOAuth</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Rodrigo Sieiro. All rights reserved. (Last updated: 2012-05-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

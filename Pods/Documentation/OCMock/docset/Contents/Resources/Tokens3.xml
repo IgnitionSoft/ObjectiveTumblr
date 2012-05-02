@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMArg.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMArg</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/any</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)any</Declaration>
+			
+			
+			<Anchor>//api/name/any</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/anyPointer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (void *)anyPointer</Declaration>
+			
+			
+			<Anchor>//api/name/anyPointer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/isNil</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)isNil</Declaration>
+			
+			
+			<Anchor>//api/name/isNil</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/isNotNil</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)isNotNil</Declaration>
+			
+			
+			<Anchor>//api/name/isNotNil</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/isNotEqual:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)isNotEqual:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/isNotEqual:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/checkWithSelector:onObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)checkWithSelector:(SEL)selector onObject:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/checkWithSelector:onObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/checkWithBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)checkWithBlock:(BOOL ( ^ ) ( id ))block</Declaration>
+			
+			
+			<Anchor>//api/name/checkWithBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/setTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id *)setTo:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/setTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMArg/resolveSpecialValues:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMArg.h</DeclaredIn>			
+			
+			<Declaration>+ (id)resolveSpecialValues:(NSValue *)value</Declaration>
+			
+			
+			<Anchor>//api/name/resolveSpecialValues:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

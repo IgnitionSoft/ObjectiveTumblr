@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCPartialMockObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCPartialMockObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCPartialMockObject.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCPartialMockObject/initWithObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCPartialMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithObject:(NSObject *)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/initWithObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCPartialMockObject/realObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCPartialMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (NSObject *)realObject</Declaration>
+			
+			
+			<Anchor>//api/name/realObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCPartialMockObject/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCPartialMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCPartialMockObject/setupSubclassForObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCPartialMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)setupSubclassForObject:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/setupSubclassForObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCPartialMockObject/setupForwarderForSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCPartialMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)setupForwarderForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/setupForwarderForSelector:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

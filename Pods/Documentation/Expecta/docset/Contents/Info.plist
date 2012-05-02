@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.Expecta-0.1.3</string>
+	<key>CFBundleName</key>
+	<string>Expecta 0.1.3 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>
+    Expecta is a matcher framework for Objective-C and Cocoa. The main
+    advantage of using Expecta over other matcher frameworks is that you do not
+    have to specify the data types. Also, the syntax of Expecta matchers is
+    much more readable and does not suffer from parenthesitis. If you have used
+    Jasmine before, you will feel right at home!
+  </string>
+	
+	<key>DocSetFeedName</key>
+	<string>Expecta 0.1.3 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Peter Jihoon Kim</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Peter Jihoon Kim</string>
+</dict>
+</plist>

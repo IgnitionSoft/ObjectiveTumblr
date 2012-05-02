@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MKNetworkEngine.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MKNetworkEngine</TokenIdentifier>
+			<Abstract type="html">@class MKNetworkEngine
+@abstract Represents a subclassable Network Engine for your app</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/initWithHostName:customHeaderFields:</TokenIdentifier>
+			<Abstract type="html">@abstract Initializes your network engine with a hostname and custom header fields</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHostName:(NSString *)hostName customHeaderFields:(NSDictionary *)headers</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHostName:customHeaderFields:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithPath:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple GET Operation with a request URL</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithPath:params:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple GET Operation with a request URL and parameters</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithPath:(NSString *)path params:(NSMutableDictionary *)body</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithPath:params:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithPath:params:httpMethod:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple GET Operation with a request URL, parameters and HTTP Method</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithPath:(NSString *)path params:(NSMutableDictionary *)body httpMethod:(NSString *)method</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithPath:params:httpMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithPath:params:httpMethod:ssl:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple GET Operation with a request URL, parameters, HTTP Method and the SSL switch</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithPath:(NSString *)path params:(NSMutableDictionary *)body httpMethod:(NSString *)method ssl:(BOOL)useSSL</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithPath:params:httpMethod:ssl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithURLString:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple GET Operation with a request URL</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithURLString:(NSString *)urlString</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithURLString:params:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple GET Operation with a request URL and parameters</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithURLString:(NSString *)urlString params:(NSMutableDictionary *)body</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithURLString:params:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/operationWithURLString:params:httpMethod:</TokenIdentifier>
+			<Abstract type="html">@abstract Creates a simple Operation with a request URL, parameters and HTTP Method</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)operationWithURLString:(NSString *)urlString params:(NSMutableDictionary *)body httpMethod:(NSString *)method</Declaration>
+			
+			
+			<Anchor>//api/name/operationWithURLString:params:httpMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/prepareHeaders:</TokenIdentifier>
+			<Abstract type="html">@abstract adds the custom default headers</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)prepareHeaders:(MKNetworkOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/prepareHeaders:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/imageAtURL:onCompletion:</TokenIdentifier>
+			<Abstract type="html">@abstract Handy helper method for fetching images</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (MKNetworkOperation *)imageAtURL:(NSURL *)url onCompletion:(MKNKImageBlock)imageFetchedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/imageAtURL:onCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/enqueueOperation:</TokenIdentifier>
+			<Abstract type="html">@abstract Enqueues your operation into the shared queue</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueOperation:(MKNetworkOperation *)request</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/enqueueOperation:forceReload:</TokenIdentifier>
+			<Abstract type="html">@abstract Enqueues your operation into the shared queue.</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueOperation:(MKNetworkOperation *)operation forceReload:(BOOL)forceReload</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueOperation:forceReload:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/setReadonlyHostName:</TokenIdentifier>
+			<Abstract type="html">@abstract HostName of the engine
+@property readonlyHostName</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSString *readonlyHostName</Declaration>
+			
+			
+			<Anchor>//api/name/readonlyHostName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MKNetworkEngine/readonlyHostName</TokenIdentifier>
+			<Abstract type="html">@abstract HostName of the engine
+@property readonlyHostName</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSString *readonlyHostName</Declaration>
+			
+			
+			<Anchor>//api/name/readonlyHostName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/setReachabilityChangedHandler:</TokenIdentifier>
+			<Abstract type="html">@abstract Handler that you implement to monitor reachability changes
+@property reachabilityChangedHandler</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NetworkStatus ns ) reachabilityChangedHandler</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityChangedHandler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MKNetworkEngine/reachabilityChangedHandler</TokenIdentifier>
+			<Abstract type="html">@abstract Handler that you implement to monitor reachability changes
+@property reachabilityChangedHandler</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NetworkStatus ns ) reachabilityChangedHandler</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityChangedHandler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/registerOperationSubclass:</TokenIdentifier>
+			<Abstract type="html">@abstract Registers an associated operation subclass</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerOperationSubclass:(Class)aClass</Declaration>
+			
+			
+			<Anchor>//api/name/registerOperationSubclass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/cacheDirectoryName</TokenIdentifier>
+			<Abstract type="html">@abstract Cache Directory Name</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)cacheDirectoryName</Declaration>
+			
+			
+			<Anchor>//api/name/cacheDirectoryName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/cacheMemoryCost</TokenIdentifier>
+			<Abstract type="html">@abstract Cache Directory In Memory Cost</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (int)cacheMemoryCost</Declaration>
+			
+			
+			<Anchor>//api/name/cacheMemoryCost</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/useCache</TokenIdentifier>
+			<Abstract type="html">@abstract Enable Caching</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)useCache</Declaration>
+			
+			
+			<Anchor>//api/name/useCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MKNetworkEngine/emptyCache</TokenIdentifier>
+			<Abstract type="html">@abstract Empties previously cached data</Abstract>
+			<DeclaredIn>MKNetworkEngine.h</DeclaredIn>			
+			
+			<Declaration>- (void)emptyCache</Declaration>
+			
+			
+			<Anchor>//api/name/emptyCache</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

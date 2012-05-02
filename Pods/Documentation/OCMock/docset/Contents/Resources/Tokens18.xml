@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMReturnValueProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMReturnValueProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMReturnValueProvider.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMReturnValueProvider/initWithValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMReturnValueProvider.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithValue:(id)aValue</Declaration>
+			
+			
+			<Anchor>//api/name/initWithValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMReturnValueProvider/handleInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMReturnValueProvider.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/handleInvocation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

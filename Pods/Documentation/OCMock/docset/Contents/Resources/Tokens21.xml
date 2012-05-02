@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCObserverMockObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCObserverMockObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCObserverMockObject.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCObserverMockObject/setExpectationOrderMatters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCObserverMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)setExpectationOrderMatters:(BOOL)flag</Declaration>
+			
+			
+			<Anchor>//api/name/setExpectationOrderMatters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCObserverMockObject/expect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCObserverMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)expect</Declaration>
+			
+			
+			<Anchor>//api/name/expect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCObserverMockObject/verify</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCObserverMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)verify</Declaration>
+			
+			
+			<Anchor>//api/name/verify</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCObserverMockObject/handleNotification:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCObserverMockObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleNotification:(NSNotification *)aNotification</Declaration>
+			
+			
+			<Anchor>//api/name/handleNotification:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

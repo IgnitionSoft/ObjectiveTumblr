@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMNotificationPoster.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMNotificationPoster</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMNotificationPoster.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMNotificationPoster/initWithNotification:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMNotificationPoster.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithNotification:(id)aNotification</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNotification:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMNotificationPoster/handleInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMNotificationPoster.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/handleInvocation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

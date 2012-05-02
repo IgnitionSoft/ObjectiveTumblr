@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMockRecorder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMockRecorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/initWithSignatureResolver:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithSignatureResolver:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/initWithSignatureResolver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/matchesInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)matchesInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/matchesInvocation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/releaseInvocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (void)releaseInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/releaseInvocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andReturn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andReturn:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/andReturn:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andReturnValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andReturnValue:(NSValue *)aValue</Declaration>
+			
+			
+			<Anchor>//api/name/andReturnValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andThrow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andThrow:(NSException *)anException</Declaration>
+			
+			
+			<Anchor>//api/name/andThrow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andPost:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andPost:(NSNotification *)aNotification</Declaration>
+			
+			
+			<Anchor>//api/name/andPost:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andCall:onObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andCall:(SEL)selector onObject:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/andCall:onObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andDo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andDo:(void ( ^ ) ( NSInvocation *))block</Declaration>
+			
+			
+			<Anchor>//api/name/andDo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/andForwardToRealObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (id)andForwardToRealObject</Declaration>
+			
+			
+			<Anchor>//api/name/andForwardToRealObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMockRecorder/invocationHandlers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMockRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)invocationHandlers</Declaration>
+			
+			
+			<Anchor>//api/name/invocationHandlers</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

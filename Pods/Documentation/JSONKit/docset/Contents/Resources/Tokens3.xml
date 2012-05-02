@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+JSONKitDeserializing.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(JSONKitDeserializing)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(JSONKitDeserializing)/objectFromJSONData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectFromJSONData</Declaration>
+			
+			
+			<Anchor>//api/name/objectFromJSONData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(JSONKitDeserializing)/objectFromJSONDataWithParseOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags</Declaration>
+			
+			
+			<Anchor>//api/name/objectFromJSONDataWithParseOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(JSONKitDeserializing)/objectFromJSONDataWithParseOptions:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/objectFromJSONDataWithParseOptions:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(JSONKitDeserializing)/mutableObjectFromJSONData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectFromJSONData</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectFromJSONData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(JSONKitDeserializing)/mutableObjectFromJSONDataWithParseOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectFromJSONDataWithParseOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(JSONKitDeserializing)/mutableObjectFromJSONDataWithParseOptions:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectFromJSONDataWithParseOptions:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMConstraint.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMConstraint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMConstraint.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMConstraint/constraint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMConstraint.h</DeclaredIn>			
+			
+			<Declaration>+ (id)constraint</Declaration>
+			
+			
+			<Anchor>//api/name/constraint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMConstraint/evaluate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMConstraint.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)evaluate:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/evaluate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMConstraint/constraintWithSelector:onObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMConstraint.h</DeclaredIn>			
+			
+			<Declaration>+ (id)constraintWithSelector:(SEL)aSelector onObject:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/constraintWithSelector:onObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OCMConstraint/constraintWithSelector:onObject:withValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMConstraint.h</DeclaredIn>			
+			
+			<Declaration>+ (id)constraintWithSelector:(SEL)aSelector onObject:(id)anObject withValue:(id)aValue</Declaration>
+			
+			
+			<Anchor>//api/name/constraintWithSelector:onObject:withValue:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

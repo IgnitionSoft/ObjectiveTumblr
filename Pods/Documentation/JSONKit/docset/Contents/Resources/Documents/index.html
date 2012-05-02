@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>JSONKit 1.4 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">JSONKit 1.4 </a></h1>
+				<a id="developerHome" href="index.html">John Engelhart</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONKit 1.4 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONKit 1.4 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>JSONKit</h1>
+
+<p>JSONKit is licensed under the terms of the BSD License.  Copyright &copy; 2011, John Engelhart.</p>
+
+<h3>A Very High Performance Objective-C JSON Library</h3>
+
+<table>
+<tr><th>Parsing</th><th>Serializing</th></tr>
+<tr><td><img src="[http://chart.googleapis.com/chart?chf=a,s,000000](http://chart.googleapis.com/chart?chf=a,s,000000)|b0,lg,0,6589C760,0,6589C7B4,1|bg,lg,90,EFEFEF,0,F8F8F8,1&chxl=0:|TouchJSON|XML+.plist|json-framework|YAJL-ObjC|gzip+JSONKit|Binary+.plist|JSONKit|2:|Time+to+Deserialize+in+%C2%B5sec&chxp=2,40&chxr=0,0,5|1,0,3250&chxs=0,676767,11.5,1,lt,676767&chxt=y,x,x&chbh=a,5,4&chs=350x185&cht=bhs&chco=6589C783&chds=0,3250&chd=t:410.517,510.262,539.614,1351.257,1683.346,1747.953,2955.881&chg=-1,0,1,3&chm=N+*s*+%C2%B5s,676767,0,0:5,10.5|N+*s*+%C2%B5s,3d3d3d,0,6,10.5,,r:-5:1&chem=y;s=text_outline;d=666,10.5,l,fff,_,Decompress+%2b+Parse+is+just;ds=0;dp=2;py=0;of=58,7|y;s=text_outline;d=666,10.5,l,fff,_,5.6%25+slower+than+Binary+.plist%21;ds=0;dp=2;py=0;of=53,-5" width="350" height="185" alt="Deserialize from JSON" /></td>
+<td><img src="[http://chart.googleapis.com/chart?chf=a,s,000000](http://chart.googleapis.com/chart?chf=a,s,000000)|b0,lg,0,699E7260,0,699E72B4,1|bg,lg,90,EFEFEF,0,F8F8F8,1&chxl=0:|TouchJSON|YAJL-ObjC|XML+.plist|json-framework|Binary+.plist|gzip+JSONKit|JSONKit|2:|Time+to+Serialize+in+%C2%B5sec&chxp=2,40&chxr=0,0,5|1,0,3250&chxs=0,676767,11.5,1,lt,676767&chxt=y,x,x&chbh=a,5,4&chs=350x175&cht=bhs&chco=699E7284&chds=0,3250&chd=t:96.387,466.947,626.153,1028.432,1945.511,2156.978,3051.976&chg=-1,0,1,3&chm=N+*s*+%C2%B5s,676767,0,0:5,10.5|N+*s*+%C2%B5s,4d4d4d,0,6,10.5,,r:-5:1&chem=y;s=text_outline;d=666,10.5,l,fff,_,Serialize+%2b+Compress+is+34%25;ds=0;dp=1;py=0;of=51,7|y;s=text_outline;d=666,10.5,l,fff,_,faster+than+Binary+.plist%21;ds=0;dp=1;py=0;of=62,-5" width="350" height="185" alt="Serialize to JSON" /></td></tr>
+<tr><td align=center><em>23% Faster than Binary</em> <code><em>.plist</em></code><em>&thinsp;!</em></td><td align=center><em>549% Faster than Binary</em> <code><em>.plist</em></code><em>&thinsp;!</em></td></tr>
+</table>
+
+
+<ul>
+<li>Benchmarking was performed on a MacBook Pro with a 2.66GHz Core 2.</li>
+<li>All JSON libraries were compiled with <code>gcc-4.2 -DNS_BLOCK_ASSERTIONS -O3 -arch x86_64</code>.</li>
+<li>Timing results are the average of 1,000 iterations of the user + system time reported by <a href="[http://developer.apple.com/library/mac/](http://developer.apple.com/library/mac/)#documentation/Darwin/Reference/ManPages/man2/getrusage.2.html"><code>getrusage</code></a>.</li>
+<li>The JSON used was <a href="[https://github.com/samsoffes/json-benchmarks/blob/master/Resources/twitter](https://github.com/samsoffes/json-benchmarks/blob/master/Resources/twitter"><code>twitter_public_timeline.json</code></a>_public_timeline.json) from <a href="https://github.com/samsoffes/json-benchmarks">samsoffes / json-benchmarks</a>.</li>
+<li>Since the <code>.plist</code> format does not support serializing <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index.html"><code>NSNull</code></a>, the <code>null</code> values in the original JSON were changed to <code>"null"</code>.</li>
+<li>The <a href="https://github.com/johnezang/JSONKit/tree/experimental">experimental</a> branch contains the <code>gzip</code> compression changes.
+
+<ul>
+<li>JSONKit automagically links to <code>libz.dylib</code> on the fly at run time&ndash; no manual linking required.</li>
+<li>Parsing / deserializing will automagically decompress a buffer if it detects a <code>gzip</code> signature header.</li>
+<li>You can compress / <code>gzip</code> the serialized JSON by passing <code>JKSerializeOptionCompress</code> to <code>-JSONDataWithOptions:error:</code>.</li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+
+<p>JavaScript Object Notation, or <a href="[http://www.json.org/](http://www.json.org/)">JSON</a>, is a lightweight, text-based, serialization format for structured data that is used by many web-based services and API&rsquo;s.  It is defined by <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a>.</p>
+
+<p>JSON provides the following primitive types:</p>
+
+<ul>
+<li><code>null</code></li>
+<li>Boolean <code>true</code> and <code>false</code></li>
+<li>Number</li>
+<li>String</li>
+<li>Array</li>
+<li>Object (a.k.a. Associative Arrays, Key / Value Hash Tables, Maps, Dictionaries, etc.)</li>
+</ul>
+
+
+<p>These primitive types are mapped to the following Objective-C Foundation classes:</p>
+
+<table>
+<tr><th>JSON</th><th>Objective-C</th></tr>
+<tr><td><code>null</code></td><td><a href="[http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index.html](http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index.html)"><code>NSNull</code></a></td></tr>
+<tr><td><code>true</code> and <code>false</code></td><td><a href="[http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html](http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html)"><code>NSNumber</code></a></td></tr>
+<tr><td>Number</td><td><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a></td></tr>
+<tr><td>String</td><td><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a></td></tr>
+<tr><td>Array</td><td><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html"><code>NSArray</code></a></td></tr>
+<tr><td>Object</td><td><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index.html"><code>NSDictionary</code></a></td></tr>
+</table>
+
+
+<p>JSONKit uses Core Foundation internally, and it is assumed that Core Foundation &equiv; Foundation for every equivalent base type, i.e. <a href="[http://developer.apple.com/library/mac/](http://developer.apple.com/library/mac/)#documentation/CoreFoundation/Reference/CFStringRef/Reference/reference.html"><code>CFString</code></a> &equiv; <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a>.</p>
+
+<p>The key words &ldquo;MUST&rdquo;, &ldquo;MUST NOT&rdquo;, &ldquo;REQUIRED&rdquo;, &ldquo;SHALL&rdquo;, &ldquo;SHALL NOT&rdquo;, &ldquo;SHOULD&rdquo;, &ldquo;SHOULD NOT&rdquo;, &ldquo;RECOMMENDED&rdquo;,  &ldquo;MAY&rdquo;, and &ldquo;OPTIONAL&rdquo; in this document are to be interpreted as described in <a href="[http://tools.ietf.org/html/rfc2119](http://tools.ietf.org/html/rfc2119)">RFC 2119</a>.</p>
+
+<h3>JSON To Objective-C Primitive Mapping Details</h3>
+
+<ul>
+<li><p>The <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">JSON specification</a> is somewhat ambiguous about the details and requirements when it comes to Unicode, and it does not specify how Unicode issues and errors should be handled.  Most of the ambiguity stems from the interpretation and scope <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> Section 3, Encoding: <code>JSON text SHALL be encoded in Unicode.</code>  It is the authors opinion and interpretation that the language of <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> requires that a JSON implementation MUST follow the requirements specified in the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a>, and in particular the <a href="[http://www.unicode.org/versions/Unicode6.0.0/ch03.pdf](http://www.unicode.org/versions/Unicode6.0.0/ch03.pdf)">Conformance</a> chapter of the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a>, which specifies requirements related to handling, interpreting, and manipulating Unicode text.</p>
+
+<p>The default behavior for JSONKit is strict <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> conformance.  It is the authors opinion and interpretation that <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> requires JSON to be encoded in Unicode, and therefore JSON that is not legal Unicode as defined by the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a> is invalid JSON.  Therefore, JSONKit will not accept JSON that contains ill-formed Unicode.  The default, strict behavior implies that the <code>JKParseOptionLooseUnicode</code> option is not enabled.</p>
+
+<p>When the <code>JKParseOptionLooseUnicode</code> option is enabled, JSONKit follows the specifications and recommendations given in <a href="[http://www.unicode.org/versions/Unicode6.0.0/ch03.pdf](http://www.unicode.org/versions/Unicode6.0.0/ch03.pdf)">The Unicode 6.0 standard, Chapter 3 &ndash; Conformance</a>, section 3.9 <em>Unicode Encoding Forms</em>.  As a general rule of thumb, the Unicode code point <code>U+FFFD</code> is substituted for any ill-formed Unicode encountered. JSONKit attempts to follow the recommended <em>Best Practice for Using U+FFFD</em>:  <strong><em>Replace each maximal subpart of an ill-formed subsequence by a single U+FFFD.</em></strong></p>
+
+<p>The following Unicode code points are treated as ill-formed Unicode, and if <code>JKParseOptionLooseUnicode</code> is enabled, cause <code>U+FFFD</code> to be substituted in their place:</p>
+
+<p><code>U+0000</code>.<br>
+<code>U+D800</code> thru <code>U+DFFF</code>, inclusive.<br>
+<code>U+FDD0</code> thru <code>U+FDEF</code>, inclusive.<br>
+<code>U+<i>n</i>FFFE</code> and <code>U+<i>n</i>FFFF</code>, where <em>n</em> is from <code>0x0</code> to <code>0x10</code></p>
+
+<p>The code points <code>U+FDD0</code> thru <code>U+FDEF</code>, <code>U+<i>n</i>FFFE</code>, and <code>U+<i>n</i>FFFF</code> (where <em>n</em> is from <code>0x0</code> to <code>0x10</code>), are defined as <strong><em>Noncharacters</em></strong> by the Unicode standard and &ldquo;should never be interchanged&rdquo;.</p>
+
+<p>An exception is made for the code point <code>U+0000</code>, which is legal Unicode.  The reason for this is that this particular code point is used by C string handling code to specify the end of the string, and any such string handling code will incorrectly stop processing a string at the point where <code>U+0000</code> occurs.  Although reasonable people may have different opinions on this point, it is the authors considered opinion that the risks of permitting JSON Strings that contain <code>U+0000</code> outweigh the benefits.  One of the risks in allowing <code>U+0000</code> to appear unaltered in a string is that it has the potential to create security problems by subtly altering the semantics of the string which can then be exploited by a malicious attacker.  This is similar to the issue of <a href="[http://www.unicode.org/reports/tr36/](http://www.unicode.org/reports/tr36/)#Deletion_of_Noncharacters">arbitrarily deleting characters from Unicode text</a>.</p>
+
+<p><a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> allows for these limitations under section 4, Parsers: <code>An implementation may set limits on the length and character contents of strings.</code>  While the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a> permits the mutation of the original JSON (i.e., substituting <code>U+FFFD</code> for ill-formed Unicode), <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> is silent on this issue.  It is the authors opinion and interpretation that <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a>, section 3 &ndash; <em>Encoding</em>, <code>JSON text SHALL be encoded in Unicode.</code> implies that such mutations are not only permitted but MUST be expected by any strictly conforming <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> JSON implementation.  The author feels obligated to note that this opinion and interpretation may not be shared by others and, in fact, may be a minority opinion and interpretation.  You should be aware that any mutation of the original JSON may subtly alter its semantics and, as a result, may have security related implications for anything that consumes the final result.</p>
+
+<p>It is important to note that JSONKit will not delete characters from the JSON being parsed as this is a <a href="[http://www.unicode.org/reports/tr36/](http://www.unicode.org/reports/tr36/)#Deletion_of_Noncharacters">requirement specified by the Unicode Standard</a>.  Additional information can be found in the <a href="[http://www.unicode.org/faq/security.html](http://www.unicode.org/faq/security.html)">Unicode Security FAQ</a> and <a href="[http://www.unicode.org/reports/tr36/](http://www.unicode.org/reports/tr36/)">Unicode Technical Report #36 &ndash; Unicode Security Consideration</a>, in particular the section on <a href="[http://www.unicode.org/reports/tr36/](http://www.unicode.org/reports/tr36/)#Canonical_Represenation">non-visual security</a>.</p></li>
+<li><p>The <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">JSON specification</a> does not specify the details or requirements for JSON String values, other than such strings must consist of Unicode code points, nor does it specify how errors should be handled.  While JSONKit makes an effort (subject to the reasonable caveats above regarding Unicode) to preserve the parsed JSON String exactly, it can not guarantee that <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> will preserve the exact Unicode semantics of the original JSON String.</p>
+
+<p>JSONKit does not perform any form of Unicode Normalization on the parsed JSON Strings, but can not make any guarantees that the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> class will not perform Unicode Normalization on the parsed JSON String used to instantiate the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> object.  The <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> class may place additional restrictions or otherwise transform the JSON String in such a way so that the JSON String is not bijective with the instantiated <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> object.  In other words, JSONKit can not guarantee that when you round trip a JSON String to a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> and then back to a JSON String that the two JSON Strings will be exactly the same, even though in practice they are.  For clarity, &ldquo;exactly&rdquo; in this case means bit for bit identical.  JSONKit can not even guarantee that the two JSON Strings will be <a href="[http://en.wikipedia.org/wiki/Unicode](http://en.wikipedia.org/wiki/Unicode)_equivalence">Unicode equivalent</a>, even though in practice they will be and would be the most likely cause for the two round tripped JSON Strings to no longer be bit for bit identical.</p></li>
+<li><p>JSONKit maps <code>true</code> and <code>false</code> to the <a href="[http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/index.html](http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/index.html)"><code>CFBoolean</code></a> values <a href="http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/Reference/reference.html#//apple_ref/doc/c_ref/kCFBooleanTrue"><code>kCFBooleanTrue</code></a> and <a href="http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/Reference/reference.html#//apple_ref/doc/c_ref/kCFBooleanFalse"><code>kCFBooleanFalse</code></a>, respectively.  Conceptually, <a href="[http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/index.html](http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/index.html)"><code>CFBoolean</code></a> values can be thought of, and treated as, <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a> class objects.  The benefit to using <a href="[http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/index.html](http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/index.html)"><code>CFBoolean</code></a> is that <code>true</code> and <code>false</code> JSON values can be round trip deserialized and serialized without conversion or promotion to a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a> with a value of <code>0</code> or <code>1</code>.</p></li>
+<li><p>The <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">JSON specification</a> does not specify the details or requirements for JSON Number values, nor does it specify how errors due to conversion should be handled.  In general, JSONKit will not accept JSON that contains JSON Number values that it can not convert with out error or loss of precision.</p>
+
+<p>For non-floating-point numbers (i.e., JSON Number values that do not include a <code>.</code> or <code>e|E</code>), JSONKit uses a 64-bit C primitive type internally, regardless of whether the target architecture is 32-bit or 64-bit.  For unsigned values (i.e., those that do not begin with a <code>-</code>), this allows for values up to <code>2<sup>64</sup>-1</code> and up to <code>-2<sup>63</sup></code>   for negative values.  As a special case, the JSON Number <code>-0</code> is treated as a floating-point number since the underlying floating-point primitive type is capable of representing a negative zero, whereas the underlying twos-complement non-floating-point primitive type can not.  JSON that contains Number values that exceed these limits will fail to parse and optionally return a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index.html"><code>NSError</code></a> object. The functions <a href="[http://developer.apple.com/library/mac/](http://developer.apple.com/library/mac/)#documentation/Darwin/Reference/ManPages/man3/strtoll.3.html"><code>strtoll()</code></a> and <a href="[http://developer.apple.com/library/mac/](http://developer.apple.com/library/mac/)#documentation/Darwin/Reference/ManPages/man3/strtoull.3.html"><code>strtoull()</code></a> are used to perform the conversions.</p>
+
+<p>The C <code>double</code> primitive type, or <a href="http://en.wikipedia.org/wiki/Double_precision_floating-point_format">IEEE 754 Double 64-bit floating-point</a>, is used to represent floating-point JSON Number values.  JSON that contains floating-point Number values that can not be represented as a <code>double</code> (i.e., due to over or underflow) will fail to parse and optionally return a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index.html"><code>NSError</code></a> object.  The function <a href="[http://developer.apple.com/library/mac/](http://developer.apple.com/library/mac/)#documentation/Darwin/Reference/ManPages/man3/strtod.3.html"><code>strtod()</code></a> is used to perform the conversion.  Note that the JSON standard does not allow for infinities or <code>NaN</code> (Not a Number).  The conversion and manipulation of <a href="http://www.validlab.com/goldberg/paper.pdf">floating-point values is non-trivial</a>.  Unfortunately, <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> is silent on how such details should be handled.  You should not depend on or expect that when a floating-point value is round tripped that it will have the same textual representation or even compare equal.  This is true even when JSONKit is used as both the parser and creator of the JSON, let alone when transferring JSON between different systems and implementations.</p></li>
+<li><p>For JSON Objects (or <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index.html"><code>NSDictionary</code></a> in JSONKit nomenclature), <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> says <code>The names within an object SHOULD be unique</code> (note: <code>name</code> is a <code>key</code> in JSONKit nomenclature). At this time the JSONKit behavior is <code>undefined</code> for JSON that contains names within an object that are not unique.  However, JSONKit currently tries to follow a &ldquo;the last key / value pair parsed is the one chosen&rdquo; policy. This behavior is not finalized and should not be depended on.</p>
+
+<p>The previously covered limitations regarding JSON Strings have important consequences for JSON Objects since JSON Strings are used as the <code>key</code>.  The <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">JSON specification</a> does not specify the details or requirements for JSON Strings used as <code>keys</code> in JSON Objects, specifically what it means for two <code>keys</code> to compare equal.  Unfortunately, because <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> states <code>JSON text SHALL be encoded in Unicode.</code>, this means that one must use the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a> to interpret the JSON, and the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a> allows for strings that are encoded with different Unicode Code Points to &ldquo;compare equal&rdquo;.  JSONKit uses <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> exclusively to manage the parsed JSON Strings.  Because <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> uses <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode</a> as its basis, there exists the possibility that <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> may subtly and silently convert the Unicode Code Points contained in the original JSON String in to a <a href="[http://en.wikipedia.org/wiki/Unicode](http://en.wikipedia.org/wiki/Unicode)_equivalence">Unicode equivalent</a> string.  Due to this, the JSONKit behavior for JSON Strings used as <code>keys</code> in JSON Objects that may be <a href="[http://en.wikipedia.org/wiki/Unicode](http://en.wikipedia.org/wiki/Unicode)_equivalence">Unicode equivalent</a> but not binary equivalent is <code>undefined</code>.</p></li>
+</ul>
+
+
+<h3>Objective-C To JSON Primitive Mapping Details</h3>
+
+<ul>
+<li><p> When serializing, the top level container, and all of its children, are required to be <em>strictly</em> <a href="[http://en.wikipedia.org/wiki/Invariant](http://en.wikipedia.org/wiki/Invariant)_(computer_science)">invariant</a> during enumeration.  This property is used to make certain optimizations, such as if a particular object has already been serialized, the result of the previous serialized <code>UTF8</code> string can be reused (i.e., the <code>UTF8</code> string of the previous serialization can simply be copied instead of performing all the serialization work again).  While this is probably only of interest to those who are doing extraordinarily unusual things with the run-time or custom classes inheriting from the classes that JSONKit will serialize (i.e, a custom object whose value mutates each time the it receives a message requesting its value for serialization), it also covers the case where any of the objects to be serialized are mutated during enumeration (i.e., mutated by another thread).  The number of times JSONKit will request an objects value is non-deterministic, from a minimum of once up to the number of times it appears in the serialized JSON&ndash; therefore an object MUST NOT depend on receiving a message requesting its value each time it appears in the serialized output. The behavior is <code>undefined</code> if these requirements are violated.</p></li>
+<li><p>The objects to be serialized MUST be acyclic.  If the objects to be serialized contain circular references the behavior is <code>undefined</code>.  For example,</p>
+
+<p><pre>[arrayOne addObject:arrayTwo];
+[arrayTwo addObject:arrayOne];
+id json = [arrayOne JSONString];</pre></p>
+
+<p>&hellip; will result in <code>undefined</code> behavior.</p></li>
+<li><p>The contents of <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> objects are encoded as <code>UTF8</code> and added to the serialized JSON.  JSONKit assumes that <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> produces well-formed <code>UTF8</code> Unicode and does no additional validation of the conversion.  When <code>JKSerializeOptionEscapeUnicode</code> is enabled, JSONKit will encode Unicode code points that can be encoded as a single <code>UTF16</code> code unit as <code>\u<i>XXXX</i></code>, and will encode Unicode code points that require <code>UTF16</code> surrogate pairs as <code>\u<i>high</i>\u<i>low</i></code>.  While JSONKit makes every effort to serialize the contents of a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> object exactly, modulo any <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> requirements, the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> class uses the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a> as its basis for representing strings.  You should be aware that the <a href="[http://www.unicode.org/versions/Unicode6.0.0/](http://www.unicode.org/versions/Unicode6.0.0/)">Unicode Standard</a> defines <a href="[http://en.wikipedia.org/wiki/Unicode](http://en.wikipedia.org/wiki/Unicode)_equivalence">string equivalence</a> in a such a way that two strings that compare equal are not required to be bit for bit identical.  Therefore there exists the possibility that <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> may mutate a string in such a way that it is <a href="[http://en.wikipedia.org/wiki/Unicode](http://en.wikipedia.org/wiki/Unicode)_equivalence">Unicode equivalent</a>, but not bit for bit identical with the original string.</p></li>
+<li><p>The <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index.html"><code>NSDictionary</code></a> class allows for any object, which can be of any class, to be used as a <code>key</code>.  JSON, however, only permits Strings to be used as <code>keys</code>. Therefore JSONKit will fail with an error if it encounters a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index.html"><code>NSDictionary</code></a> that contains keys that are not <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> objects during serialization.  More specifically, the keys must return <code>YES</code> when sent <a href="http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html%23//apple_ref/occ/intfm/NSObject/isKindOfClass:"><code>-isKindOfClass:[NSString class]</code></a>.</p></li>
+<li><p>JSONKit will fail with an error if it encounters an object that is not a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index.html"><code>NSNull</code></a>, <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a>, <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a>, <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html"><code>NSArray</code></a>, or <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index.html"><code>NSDictionary</code></a> class object during serialization.  More specifically, JSONKit will fail with an error if it encounters an object where <a href="http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html%23//apple_ref/occ/intfm/NSObject/isKindOfClass:"><code>-isKindOfClass:</code></a> returns <code>NO</code> for all of the previously mentioned classes.</p></li>
+<li><p>JSON does not allow for Numbers that are <code>&plusmn;Infinity</code> or <code>&plusmn;NaN</code>.  Therefore JSONKit will fail with an error if it encounters a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a> that contains such a value during serialization.</p></li>
+<li><p>Objects created with <a href="[http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNumber](http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNumber)_Class/Reference/Reference.html#//apple_ref/occ/clm/NSNumber/numberWithBool:"><code>[NSNumber numberWithBool:YES]</code></a> and <a href="[http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNumber](http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNumber)_Class/Reference/Reference.html#//apple_ref/occ/clm/NSNumber/numberWithBool:"><code>[NSNumber numberWithBool:NO]</code></a> will be mapped to the JSON values of <code>true</code> and <code>false</code>, respectively.  More specifically, an object must have pointer equality with <a href="http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/Reference/reference.html#//apple_ref/doc/c_ref/kCFBooleanTrue"><code>kCFBooleanTrue</code></a> or <a href="http://developer.apple.com/mac/library/documentation/CoreFoundation/Reference/CFBooleanRef/Reference/reference.html#//apple_ref/doc/c_ref/kCFBooleanFalse"><code>kCFBooleanFalse</code></a> (i.e., <code>if((id)object == (id)kCFBooleanTrue)</code>) in order to be mapped to the JSON values <code>true</code> and <code>false</code>.</p></li>
+<li><p><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a> objects that are not booleans (as defined above) are sent <a href="http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/Reference/Reference.html#//apple_ref/occ/instm/NSNumber/objCType"><code>-objCType</code></a> to determine what type of C primitive type they represent.  Those that respond with a type from the set <code>cislq</code> are treated as <code>long long</code>, those that respond with a type from the set <code>CISLQB</code> are treated as <code>unsigned long long</code>, and those that respond with a type from the set <code>fd</code> are treated as <code>double</code>.  <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/index.html"><code>NSNumber</code></a> objects that respond with a type not in the set of types mentioned will cause JSONKit to fail with an error.</p>
+
+<p>More specifically, <a href="http://developer.apple.com/library/mac/documentation/CoreFoundation/Reference/CFNumberRef/Reference/reference.html#//apple_ref/c/func/CFNumberGetValue"><code>CFNumberGetValue(object, kCFNumberLongLongType, &amp;longLong)</code></a> is used to retrieve the value of both the signed and unsigned integer values, and the type reported by <a href="http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/Reference/Reference.html#//apple_ref/occ/instm/NSNumber/objCType"><code>-objCType</code></a> is used to determine whether the result is signed or unsigned.  For floating-point values, <a href="http://developer.apple.com/library/mac/documentation/CoreFoundation/Reference/CFNumberRef/Reference/reference.html#//apple_ref/c/func/CFNumberGetValue"><code>CFNumberGetValue</code></a> is used to retrieve the value using <a href="http://developer.apple.com/library/mac/documentation/CoreFoundation/Reference/CFNumberRef/Reference/reference.html#//apple_ref/doc/c_ref/kCFNumberDoubleType"><code>kCFNumberDoubleType</code></a> for the type argument.</p>
+
+<p>Floating-point numbers are converted to their decimal representation using the <a href="http://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man3/printf.3.html"><code>printf</code></a> format conversion specifier <code>%.17g</code>.  Theoretically this allows up to a <code>float</code>, or <a href="http://en.wikipedia.org/wiki/Single_precision_floating-point_format">IEEE 754 Single 32-bit floating-point</a>, worth of precision to be represented.  This means that for practical purposes, <code>double</code> values are converted to <code>float</code> values with the associated loss of precision.  The <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> standard is silent on how floating-point numbers should be dealt with and the author has found that real world JSON implementations vary wildly in how they handle this issue.  Furthermore, the <code>%g</code> format conversion specifier may convert floating-point values that can be exactly represented as an integer to a textual representation that does not include a <code>.</code> or <code>e</code>&ndash; essentially silently promoting a floating-point value to an integer value (i.e, <code>5.0</code> becomes <code>5</code>).  Because of these and many other issues surrounding the conversion and manipulation of floating-point values, you should not expect or depend on floating point values to maintain their full precision, or when round tripped, to compare equal.</p></li>
+</ul>
+
+
+<h3>Reporting Bugs</h3>
+
+<p>Please use the <a href="https://github.com/johnezang/JSONKit/issues">github.com JSONKit Issue Tracker</a> to report bugs.</p>
+
+<p>The author requests that you do not file a bug report with JSONKit regarding problems reported by the <code>clang</code> static analyzer unless you first manually verify that it is an actual, bona-fide problem with JSONKit and, if appropriate, is not &ldquo;legal&rdquo; C code as defined by the C99 language specification.  If the <code>clang</code> static analyzer is reporting a problem with JSONKit that is not an actual, bona-fide problem and is perfectly legal code as defined by the C99 language specification, then the appropriate place to file a bug report or complaint is with the developers of the <code>clang</code> static analyzer.</p>
+
+<h3>Important Details</h3>
+
+<ul>
+<li><p>JSONKit is not designed to be used with the Mac OS X Garbage Collection.  The behavior of JSONKit when compiled with <code>-fobj-gc</code> is <code>undefined</code>.  It is extremely unlikely that Mac OS X Garbage Collection will ever be supported.</p></li>
+<li><p>The JSON to be parsed by JSONKit MUST be encoded as Unicode.  In the unlikely event you end up with JSON that is not encoded as Unicode, you must first convert the JSON to Unicode, preferably as <code>UTF8</code>.  One way to accomplish this is with the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> methods <a href="[http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString](http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString)_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/initWithBytes:length:encoding:"><code>-initWithBytes:length:encoding:</code></a> and <a href="[http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString](http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString)_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/initWithData:encoding:"><code>-initWithData:encoding:</code></a>.</p></li>
+<li><p>Internally, the low level parsing engine uses <code>UTF8</code> exclusively.  The <code>JSONDecoder</code> method <code>-objectWithData:</code> takes a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> object as its argument and it is assumed that the raw bytes contained in the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> is <code>UTF8</code> encoded, otherwise the behavior is <code>undefined</code>.</p></li>
+<li><p>It is not safe to use the same instantiated <code>JSONDecoder</code> object from multiple threads at the same time.  If you wish to share a <code>JSONDecoder</code> between threads, you are responsible for adding mutex barriers to ensure that only one thread is decoding JSON using the shared <code>JSONDecoder</code> object at a time.</p></li>
+</ul>
+
+
+<h3>Tips for speed</h3>
+
+<ul>
+<li><p>Enable the <code>NS_BLOCK_ASSERTIONS</code> pre-processor flag.  JSONKit makes heavy use of <a href="http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Functions/Reference/reference.html#//apple_ref/c/macro/NSCParameterAssert"><code>NSCParameterAssert()</code></a> internally to ensure that various arguments, variables, and other state contains only legal and expected values.  If an assertion check fails it causes a run time exception that will normally cause a program to terminate.  These checks and assertions come with a price: they take time to execute and do not contribute to the work being performed.  It is perfectly safe to enable <code>NS_BLOCK_ASSERTIONS</code> as JSONKit always performs checks that are required for correct operation.  The checks performed with <a href="http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Functions/Reference/reference.html#//apple_ref/c/macro/NSCParameterAssert"><code>NSCParameterAssert()</code></a> are completely optional and are meant to be used in &ldquo;debug&rdquo; builds where extra integrity checks are usually desired.  While your mileage may vary, the author has found that adding <code>-DNS_BLOCK_ASSERTIONS</code> to an <code>-O2</code> optimization setting can generally result in an approximate <span style="white-space: nowrap;">7-12%</span> increase in performance.</p></li>
+<li><p>Since the very low level parsing engine works exclusively with <code>UTF8</code> byte streams, anything that is not already encoded as <code>UTF8</code> must first be converted to <code>UTF8</code>.  While JSONKit provides additions to the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> class which allows you to conveniently convert JSON contained in a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a>, this convenience does come with a price. JSONKit must allocate an autoreleased <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableData_Class/index.html"><code>NSMutableData</code></a> large enough to hold the strings <code>UTF8</code> conversion and then convert the string to <code>UTF8</code> before it can begin parsing.  This takes both memory and time.  Once the parsing has finished, JSONKit sets the autoreleased <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableData_Class/index.html"><code>NSMutableData</code></a> length to <code>0</code>, which allows the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableData_Class/index.html"><code>NSMutableData</code></a> to release the memory.  This helps to minimize the amount of memory that is in use but unavailable  until the autorelease pool pops. Therefore, if speed and memory usage are a priority, you should avoid using the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> convenience methods if possible.</p></li>
+<li><p>If you are receiving JSON data from a web server, and you are able to determine that the raw bytes returned by the web server is JSON encoded as <code>UTF8</code>, you should use the <code>JSONDecoder</code> method <code>-objectWithUTF8String:length:</code> which immediately begins parsing the pointers bytes. In practice, every JSONKit method that converts JSON to an Objective-C object eventually calls this method to perform the conversion.</p></li>
+<li><p>If you are using one of the various ways provided by the <code>NSURL</code> family of classes to receive JSON results from a web server, which typically return the results in the form of a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> object, and you are able to determine that the raw bytes contained in the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> are encoded as <code>UTF8</code>, then you should use either the <code>JSONDecoder</code> method <code>objectWithData:</code> or the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> method <code>-objectFromJSONData</code>.  If are going to be converting a lot of JSON, the better choice is to instantiate a <code>JSONDecoder</code> object once and use the same instantiated object to perform all your conversions.  This has two benefits:</p>
+
+<ol>
+<li>The <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> method <code>-objectFromJSONData</code> creates an autoreleased <code>JSONDecoder</code> object to perform the one time conversion.  By instantiating a <code>JSONDecoder</code> object once and using the <code>objectWithData:</code> method repeatedly, you can avoid this overhead.</li>
+<li>The instantiated object cache from the previous JSON conversion is reused.  This can result in both better performance and a reduction in memory usage if the JSON your are converting is very similar.  A typical example might be if you are converting JSON at periodic intervals that consists of real time status updates.</li>
+</ol>
+</li>
+<li><p>On average, the <code>JSONData&hellip;</code> methods are nearly four times faster than the <code>JSONString&hellip;</code> methods when serializing a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index.html"><code>NSDictionary</code></a> or <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html"><code>NSArray</code></a> to JSON.  The difference in speed is due entirely to the instantiation overhead of <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a>.</p></li>
+</ul>
+
+
+<h3>Parsing Interface</h3>
+
+<h4><a href="Classes/JSONDecoder.html">JSONDecoder</a> Interface</h4>
+
+<p>The <code>objectWith&hellip;</code> methods return immutable collection objects and their respective <code>mutableObjectWith&hellip;</code> methods return mutable collection objects.</p>
+
+<p><strong>Note:</strong> The bytes contained in a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> object <strong><em>MUST</em></strong> be <code>UTF8</code> encoded.</p>
+
+<p><strong>Important:</strong> Methods will raise <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/Reference/reference.html#//apple_ref/doc/c_ref/NSInvalidArgumentException"><code>NSInvalidArgumentException</code></a> if <code>parseOptionFlags</code> is not valid.<br/>
+<strong>Important:</strong> <code>objectWithUTF8String:</code> and <code>mutableObjectWithUTF8String:</code> will raise <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/Reference/reference.html#//apple_ref/doc/c_ref/NSInvalidArgumentException"><code>NSInvalidArgumentException</code></a> if <code>string</code> is <code>NULL</code>.<br/>
+<strong>Important:</strong> <code>objectWithData:</code> and <code>mutableObjectWithData:</code> will raise <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/Reference/reference.html#//apple_ref/doc/c_ref/NSInvalidArgumentException"><code>NSInvalidArgumentException</code></a> if <code>jsonData</code> is <code>NULL</code>.</p>
+
+<pre>+ (id)decoder;
++ (id)decoderWithParseOptions:(JKParseOptionFlags)parseOptionFlags;
+- (id)initWithParseOptions:(JKParseOptionFlags)parseOptionFlags;
+
+- (void)clearCache;
+
+- (id)objectWithUTF8String:(const unsigned char *)string length:(size_t)length;
+- (id)objectWithUTF8String:(const unsigned char *)string length:(size_t)length error:(NSError **)error;
+- (id)mutableObjectWithUTF8String:(const unsigned char *)string length:(size_t)length;
+- (id)mutableObjectWithUTF8String:(const unsigned char *)string length:(size_t)length error:(NSError **)error;
+
+- (id)objectWithData:(NSData *)jsonData;
+- (id)objectWithData:(NSData *)jsonData error:(NSError **)error;
+- (id)mutableObjectWithData:(NSData *)jsonData;
+- (id)mutableObjectWithData:(NSData *)jsonData error:(NSError **)error;</pre>
+
+
+<h4>NSString Interface</h4>
+
+<pre>- (id)objectFromJSONString;
+- (id)objectFromJSONStringWithParseOptions:(JKParseOptionFlags)parseOptionFlags;
+- (id)objectFromJSONStringWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error;
+- (id)mutableObjectFromJSONString;
+- (id)mutableObjectFromJSONStringWithParseOptions:(JKParseOptionFlags)parseOptionFlags;
+- (id)mutableObjectFromJSONStringWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error;</pre>
+
+
+<h4>NSData Interface</h4>
+
+<pre>- (id)objectFromJSONData;
+- (id)objectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags;
+- (id)objectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error;
+- (id)mutableObjectFromJSONData;
+- (id)mutableObjectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags;
+- (id)mutableObjectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error;</pre>
+
+
+<h4>JKParseOptionFlags</h4>
+
+<table>
+  <tr><th>Parsing Option</th><th>Description</th></tr>
+  <tr><td><code>JKParseOptionNone</code></td><td>This is the default if no other other parse option flags are specified, and the option used when a convenience method does not provide an argument for explicitly specifying the parse options to use.  Synonymous with <code>JKParseOptionStrict</code>.</td></tr>
+  <tr><td><code>JKParseOptionStrict</code></td><td>The JSON will be parsed in strict accordance with the <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">RFC 4627</a> specification.</td></tr>
+  <tr><td><code>JKParseOptionComments</code></td><td>Allow C style <code>//</code> and <code>/* &hellip; */</code> comments in JSON.  This is a fairly common extension to JSON, but JSON that contains C style comments is not strictly conforming JSON.</td></tr>
+  <tr><td><code>JKParseOptionUnicodeNewlines</code></td><td>Allow Unicode recommended <code>(?:\r\n|[\n\v\f\r\x85\p{Zl}\p{Zp}])</code> newlines in JSON.  The <a href="[http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)">JSON specification</a> only allows the newline characters <code>\r</code> and <code>\n</code>, but this option allows JSON that contains the <a href="[http://en.wikipedia.org/wiki/Newline](http://en.wikipedia.org/wiki/Newline)#Unicode">Unicode recommended newline characters</a> to be parsed.  JSON that contains these additional newline characters is not strictly conforming JSON.</td></tr>
+  <tr><td><code>JKParseOptionLooseUnicode</code></td><td>Normally the decoder will stop with an error at any malformed Unicode. This option allows JSON with malformed Unicode to be parsed without reporting an error. Any malformed Unicode is replaced with <code>\uFFFD</code>, or <code>REPLACEMENT CHARACTER</code>, as specified in <a href="[http://www.unicode.org/versions/Unicode6.0.0/ch03.pdf](http://www.unicode.org/versions/Unicode6.0.0/ch03.pdf)">The Unicode 6.0 standard, Chapter 3</a>, section 3.9 <em>Unicode Encoding Forms</em>.</td></tr>
+  <tr><td><code>JKParseOptionPermitTextAfterValidJSON</code></td><td>Normally, <code>non-white-space</code> that follows the JSON is interpreted as a parsing failure. This option allows for any trailing <code>non-white-space</code> to be ignored and not cause a parsing error.</td></tr>
+</table>
+
+
+<h3>Serializing Interface</h3>
+
+<p>The serializing interface includes <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> convenience methods for those that need to serialize a single <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a>.  For those that need this functionality, the <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> additions are much more convenient than having to wrap a single <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> in a <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html"><code>NSArray</code></a>, which then requires stripping the unneeded <code>[</code>&hellip;<code>]</code> characters from the serialized JSON result.  When serializing a single <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a>, you can control whether or not the serialized JSON result is surrounded by quotation marks using the <code>includeQuotes:</code> argument:</p>
+
+<table>
+<tr><th>Example</th><th>Result</th><th>Argument</th></tr>
+<tr><td><code>a "test"...</code></td><td><code>"a \"test\"..."</code></td><td><code>includeQuotes:YES</code></td></tr>
+<tr><td><code>a "test"...</code></td><td><code>a \"test\"...</code></td><td><code>includeQuotes:NO</code></td></tr>
+</table>
+
+
+<p><strong>Note:</strong> The <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html"><code>NSString</code></a> methods that do not include a <code>includeQuotes:</code> argument behave as if invoked with <code>includeQuotes:YES</code>.<br/>
+<strong>Note:</strong> The bytes contained in the returned <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html"><code>NSData</code></a> object are <code>UTF8</code> encoded.</p>
+
+<h4>NSArray and NSDictionary Interface</h4>
+
+<pre>- (NSData *)JSONData;
+- (NSData *)JSONDataWithOptions:(JKSerializeOptionFlags)serializeOptions error:(NSError **)error;
+- (NSString *)JSONString;
+- (NSString *)JSONStringWithOptions:(JKSerializeOptionFlags)serializeOptions error:(NSError **)error;</pre>
+
+
+<h4>NSString Interface</h4>
+
+<pre>- (NSData *)JSONData;
+- (NSData *)JSONDataWithOptions:(JKSerializeOptionFlags)serializeOptions includeQuotes:(BOOL)includeQuotes error:(NSError **)error;
+- (NSString *)JSONString;
+- (NSString *)JSONStringWithOptions:(JKSerializeOptionFlags)serializeOptions includeQuotes:(BOOL)includeQuotes error:(NSError **)error;</pre>
+
+
+<h4>JKSerializeOptionFlags</h4>
+
+<table>
+  <tr><th>Serializing Option</th><th>Description</th></tr>
+  <tr><td><code>JKSerializeOptionNone</code></td><td>This is the default if no other other serialize option flags are specified, and the option used when a convenience method does not provide an argument for explicitly specifying the serialize options to use.</td></tr>
+  <tr><td><code>JKSerializeOptionPretty</code></td><td>Normally the serialized JSON does not include any unnecessary <code>white-space</code>.  While this form is the most compact, the lack of any <code>white-space</code> means that it's something only another JSON parser could love.  Enabling this option causes JSONKit to add additional <code>white-space</code> that makes it easier for people to read.  Other than the extra <code>white-space</code>, the serialized JSON is identical to the JSON that would have been produced had this option not been enabled.</td></tr>
+  <tr><td><code>JKSerializeOptionEscapeUnicode</code></td><td>When JSONKit encounters Unicode characters in <a href="[http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString](http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString)_Class/index.html"><code>NSString</code></a> objects, the default behavior is to encode those Unicode characters as <code>UTF8</code>.  This option causes JSONKit to encode those characters as <code>\u<i>XXXX</i></code>.  For example,<br/><code>["w&isin;L&#10234;y(&#8739;y&#8739;&le;&#8739;w&#8739;)"]</code><br/>becomes:<br/><code>["w\u2208L\u27fa\u2203y(\u2223y\u2223\u2264\u2223w\u2223)"]</code></td></tr>
+</table>
+
+
+
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/JSONDecoder.html">JSONDecoder</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSArray+JSONKitSerializing.html">NSArray(JSONKitSerializing)</a></li>
+							
+							<li><a href="Categories/NSData+JSONKitDeserializing.html">NSData(JSONKitDeserializing)</a></li>
+							
+							<li><a href="Categories/NSDictionary+JSONKitSerializing.html">NSDictionary(JSONKitSerializing)</a></li>
+							
+							<li><a href="Categories/NSString+JSONKitDeserializing.html">NSString(JSONKitDeserializing)</a></li>
+							
+							<li><a href="Categories/NSString+JSONKitSerializing.html">NSString(JSONKitSerializing)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 John Engelhart. All rights reserved. (Last updated: 2012-05-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

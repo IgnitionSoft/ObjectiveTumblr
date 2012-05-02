@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/siuying/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.OCMock-2.0.1.docset
+Time: 2012-05-02 14:13:38 +0000

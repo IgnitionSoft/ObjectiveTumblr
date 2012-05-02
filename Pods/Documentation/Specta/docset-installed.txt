@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/siuying/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.Specta-0.1.4.docset
+Time: 2012-05-02 14:14:07 +0000

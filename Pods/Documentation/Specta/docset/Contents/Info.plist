@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.Specta-0.1.4</string>
+	<key>CFBundleName</key>
+	<string>Specta 0.1.4 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>
+    Specta is a light-weight testing framework for Objective-C and Cocoa that
+    adds RSpec-like DSL to OCUnit. It is super quick and easy to set up, and
+    because it runs on top of OCUnit, it has an excellent Xcode integration and
+    accurate error site reporting. Use your preferred matcher and mocking
+    framework. Expecta and OCMock are recommended.
+  </string>
+	
+	<key>DocSetFeedName</key>
+	<string>Specta 0.1.4 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Peter Jihoon Kim</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Peter Jihoon Kim</string>
+</dict>
+</plist>

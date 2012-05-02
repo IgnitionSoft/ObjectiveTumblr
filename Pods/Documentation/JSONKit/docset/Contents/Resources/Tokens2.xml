@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+JSONKitSerializing.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(JSONKitSerializing)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(JSONKitSerializing)/JSONData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)JSONData</Declaration>
+			
+			
+			<Anchor>//api/name/JSONData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(JSONKitSerializing)/JSONDataWithOptions:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)JSONDataWithOptions:(JKSerializeOptionFlags)serializeOptions error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/JSONDataWithOptions:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(JSONKitSerializing)/JSONString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)JSONString</Declaration>
+			
+			
+			<Anchor>//api/name/JSONString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(JSONKitSerializing)/JSONStringWithOptions:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)JSONStringWithOptions:(JKSerializeOptionFlags)serializeOptions error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/JSONStringWithOptions:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

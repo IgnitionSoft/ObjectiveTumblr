@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>RSOAuthEngine 1.0.0 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">RSOAuthEngine 1.0.0 </a></h1>
+				<a id="developerHome" href="index.html">Rodrigo Sieiro</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RSOAuthEngine 1.0.0 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RSOAuthEngine 1.0.0 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></h1>
+
+<p>By Rodrigo Sieiro &ndash; <a href="http://twitter.com/rsieiro">@rsieiro</a><br/>
+<a href="http://rodrigo.sharpcube.com">http://rodrigo.sharpcube.com</a></p>
+
+<h2>About</h2>
+
+<p><strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong> is an ARC based OAuth engine for <a href="https://github.com/MugunthKumar/MKNetworkKit">MKNetworkKit</a>. It supports OAuth 1.0a and it&rsquo;s fully compatible with MKNetworkKit existing classes, allowing you to simply inherit <a href="Classes/RSOAuthEngine.html"><code>RSOAuthEngine</code></a> instead of <code>MKNetworkEngine</code> to get OAuth support.</p>
+
+<h2>Usage</h2>
+
+<p>If you already have a project using MKNetworkKit, just add the contents of the <a href="Classes/RSOAuthEngine.html"><code>RSOAuthEngine</code></a> directory to your project and change all classes that inherit from <code>MKNetworkEngine</code> to inherit from <a href="Classes/RSOAuthEngine.html"><code>RSOAuthEngine</code></a> instead. Whenever you need to send an OAuth signed request, replace calls to <code>enqueueOperation</code> with <code>enqueueSignedOperation</code>.</p>
+
+<p>If you&rsquo;re not currently using MKNetworkKit, follow the instructions to add it to your project <a href="http://blog.mugunthkumar.com/products/ios-framework-introducing-mknetworkkit/">here</a> first, then add <strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong> as written in the previous paragraph. <strong>Important</strong>: although not mentioned in the instructions, MKNetworkKit also requires Security.framework.</p>
+
+<h3>Usage Details</h3>
+
+<p>A common OAuth flow using <strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong> should go like this:</p>
+
+<ol>
+<li>Create a class that inherits from <strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong>.</li>
+<li>Init your class using one of the defined initializers that include your Consumer Key and Secret.</li>
+<li>Send a signed operation to get a request token.</li>
+<li>Fill the request token using <code>fillTokenWithResponseBody:type</code> (use <code>RSOAuthRequestToken</code> as type).</li>
+<li>Redirect the user to the authorization page and wait for the callback.</li>
+<li>Fill the request token (again) using <code>fillTokenWithResponseBody:type</code> (use <code>RSOAuthRequestToken</code> as type), this time using the parameters received in the callback.</li>
+<li>Send another request to get an access token.</li>
+<li>Fill the access token using <code>fillTokenWithResponseBody:type</code> (use <code>RSOAuthAccessToken</code> as type).</li>
+<li>From now on, all requests sent with <code>enqueueSignedOperation</code> will be signed with your tokens.</li>
+</ol>
+
+
+<p>Alternatively you could use <code>setAccessToken:secret</code> after initialization to define a previously stored access token. If you need or want to use xAuth instead of the request token/authorize workflow, please take a look at the Instapaper demo.</p>
+
+<h2>Twitter Demo</h2>
+
+<table>
+  <tr>
+    <td width="300">
+<img src="[https://github.com/rsieiro/RSOAuthEngine/raw/master/screenshot.png](https://github.com/rsieiro/RSOAuthEngine/raw/master/screenshot.png)" alt="Screenshot" width="396" />
+    </td>
+    <td valign="top">
+<h3>About</h3>
+
+<p>This sample project demonstrates how to use <strong>RSOAuthEngine</strong> to authenticate with Twitter. It includes a basic engine that implements Twitter's OAuth authentication flow and allows you to post a tweet. It also shows you how to persist the OAuth access token in the Keychain. The Twitter engine should not be considered production code, and is only included to demonstrate <strong>RSOAuthEngine</strong>.</p>
+
+<h3>Building</h3>
+
+<p>To build the demo project, follow these steps:</p>
+
+<ol>
+<li>In the project directory, run <code>git submodule update --init</code> to retrieve MKNetworkKit (added to the project as a submodule).</li>
+<li>Put your consumer key and secret at the top of <code>RSTwitterEngine.m</code> and remove the <code>#error</code> macro. If you don't have a consumer key/secret, register an app at <a href="[https://dev.twitter.com/apps](https://dev.twitter.com/apps)">[https://dev.twitter.com/apps](https://dev.twitter.com/apps)</a> to get a pair. <strong>Important</strong>: you need to add a dummy callback URL to your app when registering, otherwise Twitter won't allow you to send a callback URL in the OAuth request.</li>
+</ol>
+
+<h3>Tips</h3>
+
+<p>Swipe from left to right in the status message to clear previously stored OAuth tokens.</p>
+    </td>
+  </tr>
+</table>
+
+
+<h2>Instapaper Demo</h2>
+
+<table>
+  <tr>
+    <td width="300">
+<img src="[https://github.com/rsieiro/RSOAuthEngine/raw/master/screenshot-2.png](https://github.com/rsieiro/RSOAuthEngine/raw/master/screenshot-2.png)" alt="Screenshot" width="396" />
+    </td>
+    <td valign="top">
+<h3>About</h3>
+
+<p>This sample project demonstrates how to use <strong>RSOAuthEngine</strong> with xAuth to authenticate with Instapaper. It includes a basic engine that implements Instapapers's xAuth authentication flow and allows you to add a bookmark to your account. It also shows you how to persist the OAuth access token in the Keychain. The Instapaper engine should not be considered production code, and is only included to demonstrate <strong>RSOAuthEngine</strong>.</p>
+
+<h3>Building</h3>
+
+<p>To build the demo project, follow these steps:</p>
+
+<ol>
+<li>In the project directory, run <code>git submodule update --init</code> to retrieve MKNetworkKit (added to the project as a submodule).</li>
+<li>Put your consumer key and secret at the top of <code>RSInstapaperEngine.m</code> and remove the <code>#error</code> macro. If you don't have a consumer key/secret, register an app at <a href="[http://www.instapaper.com/main/request](http://www.instapaper.com/main/request)_oauth_consumer_token">this page</a> to get a pair. <strong>Important</strong>: most Instapaper API methods are only available to users with a Subscription account.</li>
+</ol>
+
+<h3>Tips</h3>
+
+<p>Swipe from left to right in the status message to clear previously stored OAuth tokens.</p>
+    </td>
+  </tr>
+</table>
+
+
+<h2>Compatibility</h2>
+
+<p>Currently this engine has been tested with Twitter and Instapaper. If you use <strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong> to implement OAuth authentication with another service, please let me know so I can update this session.</p>
+
+<h2>License</h2>
+
+<p><strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong> is licensed under the MIT License. Please give me some kind of attribution if you use it in your project, such as a &ldquo;thanks&rdquo; note somewhere. I&rsquo;d also love to know if you use my code, please drop me a line if you do!</p>
+
+<p>Full license text follows:</p>
+
+<pre><code>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+
+<h2>Acknowledgments</h2>
+
+<p><strong><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></strong> may contain code from <a href="https://github.com/keybuk/asi-http-request-oauth">ASI-HTTP-Request-OAuth</a> by Scott James Remnant and the iPhone version of <a href="https://github.com/jdg/oauthconsumer">OAuthConsumer</a> by Jonathan George. I used bits and pieces of the code from both projects as references to write this engine.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/RSOAuthEngine.html">RSOAuthEngine</a></li>
+							
+						</ul>
+					</div>
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Rodrigo Sieiro. All rights reserved. (Last updated: 2012-05-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

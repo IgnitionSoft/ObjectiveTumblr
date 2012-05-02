@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JSONDecoder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JSONDecoder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/JSONDecoder/decoder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>+ (id)decoder</Declaration>
+			
+			
+			<Anchor>//api/name/decoder</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/JSONDecoder/decoderWithParseOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>+ (id)decoderWithParseOptions:(JKParseOptionFlags)parseOptionFlags</Declaration>
+			
+			
+			<Anchor>//api/name/decoderWithParseOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/initWithParseOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithParseOptions:(JKParseOptionFlags)parseOptionFlags</Declaration>
+			
+			
+			<Anchor>//api/name/initWithParseOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/clearCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)clearCache</Declaration>
+			
+			
+			<Anchor>//api/name/clearCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/parseUTF8String:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)parseUTF8String:(const unsigned char *)string length:(size_t)length</Declaration>
+			
+			
+			<Anchor>//api/name/parseUTF8String:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/parseUTF8String:length:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)parseUTF8String:(const unsigned char *)string length:(size_t)length error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/parseUTF8String:length:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/parseJSONData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)parseJSONData:(NSData *)jsonData</Declaration>
+			
+			
+			<Anchor>//api/name/parseJSONData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/parseJSONData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)parseJSONData:(NSData *)jsonData error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/parseJSONData:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/objectWithUTF8String:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithUTF8String:(const unsigned char *)string length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithUTF8String:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/objectWithUTF8String:length:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithUTF8String:(const unsigned char *)string length:(NSUInteger)length error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithUTF8String:length:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/objectWithData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithData:(NSData *)jsonData</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/objectWithData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithData:(NSData *)jsonData error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithData:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/mutableObjectWithUTF8String:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectWithUTF8String:(const unsigned char *)string length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectWithUTF8String:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/mutableObjectWithUTF8String:length:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectWithUTF8String:(const unsigned char *)string length:(NSUInteger)length error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectWithUTF8String:length:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/mutableObjectWithData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectWithData:(NSData *)jsonData</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONDecoder/mutableObjectWithData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JSONKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)mutableObjectWithData:(NSData *)jsonData error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/mutableObjectWithData:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

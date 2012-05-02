@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>JTObjectMapping 0.0.1</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>JTDateMappings</Name>
+			<Path>Classes/JTDateMappings.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>JTMappings</Name>
+			<Path>Classes/JTMappings.html</Path>
+		</Node>
+		
+		<Node id="3">
+			<Name>NSArray()</Name>
+			<Path>Categories/NSArray+.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>NSDate(JTObjectMapping)</Name>
+			<Path>Categories/NSDate+JTObjectMapping.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>NSDictionary()</Name>
+			<Path>Categories/NSDictionary+.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>NSObject(JTObjectMapping)</Name>
+			<Path>Categories/NSObject+JTObjectMapping.html</Path>
+		</Node>
+		
+		<Node id="7">
+			<Name>JTDateMappings</Name>
+			<Path>Protocols/JTDateMappings.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>JTMappings</Name>
+			<Path>Protocols/JTMappings.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>JTValidJSONResponse</Name>
+			<Path>Protocols/JTValidJSONResponse.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

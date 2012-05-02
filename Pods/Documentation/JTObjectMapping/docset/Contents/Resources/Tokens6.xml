@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+JTObjectMapping.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(JTObjectMapping)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+JTObjectMapping.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(JTObjectMapping)/setValueFromDictionary:mapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+JTObjectMapping.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValueFromDictionary:(NSDictionary *)dict mapping:(NSDictionary *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/setValueFromDictionary:mapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(JTObjectMapping)/mappingWithKey:mapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+JTObjectMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;JTMappings&gt;)mappingWithKey:(NSString *)key mapping:(NSDictionary *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mappingWithKey:mapping:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(JTObjectMapping)/objectFromJSONObject:mapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+JTObjectMapping.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectFromJSONObject:(id&lt;JTValidJSONResponse&gt;)object mapping:(NSDictionary *)mapping</Declaration>
+			
+			
+			<Anchor>//api/name/objectFromJSONObject:mapping:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

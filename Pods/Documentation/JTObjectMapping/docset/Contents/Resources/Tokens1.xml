@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JTDateMappings.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JTDateMappings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTDateMappings.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JTDateMappings/setKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTDateMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JTDateMappings/key</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTDateMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JTDateMappings/setDateFormatString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTDateMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *dateFormatString</Declaration>
+			
+			
+			<Anchor>//api/name/dateFormatString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JTDateMappings/dateFormatString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTDateMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *dateFormatString</Declaration>
+			
+			
+			<Anchor>//api/name/dateFormatString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/JTDateMappings/mappingWithKey:dateFormatString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTDateMappings.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;JTDateMappings&gt;)mappingWithKey:(NSString *)key dateFormatString:(NSString *)dateFormatString</Declaration>
+			
+			
+			<Anchor>//api/name/mappingWithKey:dateFormatString:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

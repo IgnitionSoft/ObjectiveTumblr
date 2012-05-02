@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>JTObjectMapping 0.0.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">JTObjectMapping 0.0.1 </a></h1>
+				<a id="developerHome" href="index.html">mystcolor</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JTObjectMapping 0.0.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JTObjectMapping 0.0.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>JTObjectMapping</h1>
+
+<p>Inspired by RestKit. A very simple objective-c framework that maps a JSON response from NSDictionary or NSArray to NSObject subclasses for iOS.</p>
+
+<h2>Usage</h2>
+
+<p>Suppose this is a JSON User object response represented in NSDictionary after parsing</p>
+
+<pre>
+{
+    "create_date" = "1970-01-01T00:00:00+0000";
+    "p_age" = 30;
+    "p_childs" =     (
+        Mary,
+        James
+    );
+    "p_name" = Bob;
+    "p_title" = Manager;
+}
+</pre>
+
+
+<p>Get ready with your JSON use <strong>[NSObject objectFromJSONObject:json mapping:mapping]</strong> to convert.</p>
+
+<pre><code>...
+NSDictionary *json = &lt;Parsed JSON response from above&gt;;
+
+//
+// Use [NSObject objectFromJSONObject:mapping:] to convert 
+// the NSDictionary into your JTUserTest object
+//
+JTUserTest *user = [JTUserTest objectFromJSONObject:json mapping:mapping];
+...
+</code></pre>
+
+<p>Define necessary mappings, from a dictionary key to a property keyPath.</p>
+
+<pre><code>NSDictionary *mapping = [NSDictionary dictionaryWithObjectsAndKeys:
+                @"name", @"p_name",
+                @"title", @"p_title",
+                @"age", @"p_age",
+                @"childs", @"p_childs",                    
+                [NSDate mappingWithKey:@"createDate"
+                      dateFormatString:@"yyyy-MM-dd'T'hh:mm:ssZ"], @"create_date",
+                nil];
+</code></pre>
+
+<p>Of course you need to define your own User object with corresponding @synthesize properties, and thats all for what you need.</p>
+
+<pre><code>// JTUserTest.h
+
+@interface JTUserTest : NSObject
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSNumber *age;
+@property (nonatomic, retain) NSDate *createDate;
+@property (nonatomic, retain) NSArray *childs;
+
+@end
+
+// JTUserTest.m
+#import "JTUserTest.h"
+
+@implementation JTUserTest
+@synthesize name, title, age;
+@synthesize createDate;
+@synthesize childs;
+
+@end
+</code></pre>
+
+<p>For more detailed usage, see <strong>JTObjectMappingTests.m</strong>, will be adding more detailed description soon.</p>
+
+<h2>Update Logs</h2>
+
+<p>v1.0.5<br/>
+&ndash; Fixed nested array causing crash</p>
+
+<p>v1.0.4<br/>
+&ndash; Added auto NSDictionary value to NSObject property mapping with the same key defined<br/>
+&ndash; Fixed false possible JSON response in NSArray use case</p>
+
+<p>v1.0.3 <br/>
+&ndash; Add raw array JSON response support</p>
+
+<p>v1.0.2 <br/>
+&ndash; Added NSArray support</p>
+
+<p>v1.0.1<br/>
+&ndash; Added NSDate support for mappings</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/JTDateMappings.html">JTDateMappings</a></li>
+							
+							<li><a href="Classes/JTMappings.html">JTMappings</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/JTDateMappings.html">JTDateMappings</a></li>
+							
+							<li><a href="Protocols/JTMappings.html">JTMappings</a></li>
+							
+							<li><a href="Protocols/JTValidJSONResponse.html">JTValidJSONResponse</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSArray+.html">NSArray()</a></li>
+							
+							<li><a href="Categories/NSDate+JTObjectMapping.html">NSDate(JTObjectMapping)</a></li>
+							
+							<li><a href="Categories/NSDictionary+.html">NSDictionary()</a></li>
+							
+							<li><a href="Categories/NSObject+JTObjectMapping.html">NSObject(JTObjectMapping)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 mystcolor. All rights reserved. (Last updated: 2012-05-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

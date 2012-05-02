@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JTMappings.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JTMappings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JTMappings/setKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JTMappings/key</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JTMappings/setMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JTMappings/mapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *mapping</Declaration>
+			
+			
+			<Anchor>//api/name/mapping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JTMappings/setTargetClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class targetClass</Declaration>
+			
+			
+			<Anchor>//api/name/targetClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JTMappings/targetClass</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class targetClass</Declaration>
+			
+			
+			<Anchor>//api/name/targetClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/JTMappings/mappingWithKey:targetClass:mapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>JTMappings.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;JTMappings&gt;)mappingWithKey:(NSString *)aKey targetClass:(Class)aClass mapping:(NSDictionary *)aMapping</Declaration>
+			
+			
+			<Anchor>//api/name/mappingWithKey:targetClass:mapping:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

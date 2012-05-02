@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OCMObserverRecorder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OCMObserverRecorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMObserverRecorder.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMObserverRecorder/notificationWithName:object:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMObserverRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (void)notificationWithName:(NSString *)name object:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/notificationWithName:object:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMObserverRecorder/matchesNotification:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMObserverRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)matchesNotification:(NSNotification *)aNotification</Declaration>
+			
+			
+			<Anchor>//api/name/matchesNotification:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OCMObserverRecorder/argument:matchesArgument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OCMObserverRecorder.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)argument:(id)expectedArg matchesArgument:(id)observedArg</Declaration>
+			
+			
+			<Anchor>//api/name/argument:matchesArgument:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

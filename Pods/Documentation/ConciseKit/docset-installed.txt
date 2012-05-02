@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/siuying/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.ConciseKit-0.1.2.docset
-Time: 2012-04-30 04:08:52 +0000
+Time: 2012-05-02 14:12:39 +0000
