@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542CB85D154942DF00318CE7 /* IGPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 542CB85C154942DF00318CE7 /* IGPost.m */; };
+		5481E0981549565D00C4439B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5481E0971549565D00C4439B /* SenTestingKit.framework */; };
+		5481E0991549565D00C4439B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54954CEF1547A85100428BB5 /* UIKit.framework */; };
+		5481E09A1549565D00C4439B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54954CF11547A85100428BB5 /* Foundation.framework */; };
+		5481E0A01549565D00C4439B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5481E09E1549565D00C4439B /* InfoPlist.strings */; };
+		5481E0A31549565D00C4439B /* IGObjectiveTumblrSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481E0A21549565D00C4439B /* IGObjectiveTumblrSpecs.m */; };
+		5481E0A91549570000C4439B /* IGObjectiveTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D391547B3D400428BB5 /* IGObjectiveTumblr.m */; };
+		5481E0AA1549570000C4439B /* IGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D311547B20C00428BB5 /* IGUser.m */; };
+		5481E0AB1549570000C4439B /* IGBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D361547B27D00428BB5 /* IGBlog.m */; };
+		5481E0AC1549570000C4439B /* IGPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 542CB85C154942DF00318CE7 /* IGPost.m */; };
+		5481E0AE1549571300C4439B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5481E0AD1549571300C4439B /* libPods.a */; };
+		54954CF01547A85100428BB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54954CEF1547A85100428BB5 /* UIKit.framework */; };
+		54954CF21547A85100428BB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54954CF11547A85100428BB5 /* Foundation.framework */; };
+		54954CF41547A85100428BB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54954CF31547A85100428BB5 /* CoreGraphics.framework */; };
+		54954CFA1547A85100428BB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54954CF81547A85100428BB5 /* InfoPlist.strings */; };
+		54954CFC1547A85100428BB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954CFB1547A85100428BB5 /* main.m */; };
+		54954D001547A85100428BB5 /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954CFF1547A85100428BB5 /* IGAppDelegate.m */; };
+		54954D031547A85100428BB5 /* IGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D021547A85100428BB5 /* IGMasterViewController.m */; };
+		54954D061547A85100428BB5 /* IGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D051547A85100428BB5 /* IGDetailViewController.m */; };
+		54954D091547A85100428BB5 /* IGMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54954D071547A85100428BB5 /* IGMasterViewController.xib */; };
+		54954D0C1547A85100428BB5 /* IGDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54954D0A1547A85100428BB5 /* IGDetailViewController.xib */; };
+		54954D321547B20C00428BB5 /* IGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D311547B20C00428BB5 /* IGUser.m */; };
+		54954D371547B27D00428BB5 /* IGBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D361547B27D00428BB5 /* IGBlog.m */; };
+		54954D3A1547B3D400428BB5 /* IGObjectiveTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54954D391547B3D400428BB5 /* IGObjectiveTumblr.m */; };
+		CEBDE31D07184CA5AD905C79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E853CDB56E3A4FC893F5F5BF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		542CB78C154812D000318CE7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		542CB85B154942DF00318CE7 /* IGPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGPost.h; path = Classes/IGPost.h; sourceTree = "<group>"; };
+		542CB85C154942DF00318CE7 /* IGPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGPost.m; path = Classes/IGPost.m; sourceTree = "<group>"; };
+		5481E0961549565D00C4439B /* ObjectiveTumblrTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveTumblrTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5481E0971549565D00C4439B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5481E09D1549565D00C4439B /* ObjectiveTumblrTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveTumblrTest-Info.plist"; sourceTree = "<group>"; };
+		5481E09F1549565D00C4439B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5481E0A21549565D00C4439B /* IGObjectiveTumblrSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGObjectiveTumblrSpecs.m; sourceTree = "<group>"; };
+		5481E0A41549565E00C4439B /* ObjectiveTumblrTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveTumblrTest-Prefix.pch"; sourceTree = "<group>"; };
+		5481E0AD1549571300C4439B /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		54954CEB1547A85100428BB5 /* ObjectiveTumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveTumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54954CEF1547A85100428BB5 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54954CF11547A85100428BB5 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54954CF31547A85100428BB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54954CF71547A85100428BB5 /* ObjectiveTumblr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveTumblr-Info.plist"; sourceTree = "<group>"; };
+		54954CF91547A85100428BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54954CFB1547A85100428BB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54954CFD1547A85100428BB5 /* ObjectiveTumblr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveTumblr-Prefix.pch"; sourceTree = "<group>"; };
+		54954CFE1547A85100428BB5 /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
+		54954CFF1547A85100428BB5 /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
+		54954D011547A85100428BB5 /* IGMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGMasterViewController.h; sourceTree = "<group>"; };
+		54954D021547A85100428BB5 /* IGMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGMasterViewController.m; sourceTree = "<group>"; };
+		54954D041547A85100428BB5 /* IGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGDetailViewController.h; sourceTree = "<group>"; };
+		54954D051547A85100428BB5 /* IGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGDetailViewController.m; sourceTree = "<group>"; };
+		54954D081547A85100428BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IGMasterViewController.xib; sourceTree = "<group>"; };
+		54954D0B1547A85100428BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IGDetailViewController.xib; sourceTree = "<group>"; };
+		54954D301547B20C00428BB5 /* IGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUser.h; path = Classes/IGUser.h; sourceTree = "<group>"; };
+		54954D311547B20C00428BB5 /* IGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUser.m; path = Classes/IGUser.m; sourceTree = "<group>"; };
+		54954D351547B27D00428BB5 /* IGBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGBlog.h; path = Classes/IGBlog.h; sourceTree = "<group>"; };
+		54954D361547B27D00428BB5 /* IGBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGBlog.m; path = Classes/IGBlog.m; sourceTree = "<group>"; };
+		54954D381547B3D400428BB5 /* IGObjectiveTumblr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGObjectiveTumblr.h; path = Classes/IGObjectiveTumblr.h; sourceTree = "<group>"; };
+		54954D391547B3D400428BB5 /* IGObjectiveTumblr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGObjectiveTumblr.m; path = Classes/IGObjectiveTumblr.m; sourceTree = "<group>"; };
+		67A72F39E563458399741302 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E853CDB56E3A4FC893F5F5BF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5481E0921549565D00C4439B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5481E0AE1549571300C4439B /* libPods.a in Frameworks */,
+				5481E0981549565D00C4439B /* SenTestingKit.framework in Frameworks */,
+				5481E0991549565D00C4439B /* UIKit.framework in Frameworks */,
+				5481E09A1549565D00C4439B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54954CE81547A85100428BB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54954CF01547A85100428BB5 /* UIKit.framework in Frameworks */,
+				54954CF21547A85100428BB5 /* Foundation.framework in Frameworks */,
+				54954CF41547A85100428BB5 /* CoreGraphics.framework in Frameworks */,
+				CEBDE31D07184CA5AD905C79 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5481E09B1549565D00C4439B /* ObjectiveTumblrTest */ = {
+			isa = PBXGroup;
+			children = (
+				5481E0A21549565D00C4439B /* IGObjectiveTumblrSpecs.m */,
+				5481E09C1549565D00C4439B /* Supporting Files */,
+			);
+			path = ObjectiveTumblrTest;
+			sourceTree = "<group>";
+		};
+		5481E09C1549565D00C4439B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5481E09D1549565D00C4439B /* ObjectiveTumblrTest-Info.plist */,
+				5481E09E1549565D00C4439B /* InfoPlist.strings */,
+				5481E0A41549565E00C4439B /* ObjectiveTumblrTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54954CE01547A85100428BB5 = {
+			isa = PBXGroup;
+			children = (
+				54954CF51547A85100428BB5 /* ObjectiveTumblr */,
+				5481E09B1549565D00C4439B /* ObjectiveTumblrTest */,
+				54954CEE1547A85100428BB5 /* Frameworks */,
+				54954CEC1547A85100428BB5 /* Products */,
+				67A72F39E563458399741302 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		54954CEC1547A85100428BB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54954CEB1547A85100428BB5 /* ObjectiveTumblr.app */,
+				5481E0961549565D00C4439B /* ObjectiveTumblrTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54954CEE1547A85100428BB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5481E0AD1549571300C4439B /* libPods.a */,
+				54954CEF1547A85100428BB5 /* UIKit.framework */,
+				54954CF11547A85100428BB5 /* Foundation.framework */,
+				54954CF31547A85100428BB5 /* CoreGraphics.framework */,
+				E853CDB56E3A4FC893F5F5BF /* libPods.a */,
+				5481E0971549565D00C4439B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54954CF51547A85100428BB5 /* ObjectiveTumblr */ = {
+			isa = PBXGroup;
+			children = (
+				54954D1D1547A9EB00428BB5 /* Classes */,
+				54954CFE1547A85100428BB5 /* IGAppDelegate.h */,
+				54954CFF1547A85100428BB5 /* IGAppDelegate.m */,
+				54954D011547A85100428BB5 /* IGMasterViewController.h */,
+				54954D021547A85100428BB5 /* IGMasterViewController.m */,
+				54954D041547A85100428BB5 /* IGDetailViewController.h */,
+				54954D051547A85100428BB5 /* IGDetailViewController.m */,
+				54954D071547A85100428BB5 /* IGMasterViewController.xib */,
+				54954D0A1547A85100428BB5 /* IGDetailViewController.xib */,
+				542CB78C154812D000318CE7 /* Constants.h */,
+				54954CF61547A85100428BB5 /* Supporting Files */,
+			);
+			path = ObjectiveTumblr;
+			sourceTree = "<group>";
+		};
+		54954CF61547A85100428BB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54954CF71547A85100428BB5 /* ObjectiveTumblr-Info.plist */,
+				54954CF81547A85100428BB5 /* InfoPlist.strings */,
+				54954CFB1547A85100428BB5 /* main.m */,
+				54954CFD1547A85100428BB5 /* ObjectiveTumblr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54954D1D1547A9EB00428BB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54954D381547B3D400428BB5 /* IGObjectiveTumblr.h */,
+				54954D391547B3D400428BB5 /* IGObjectiveTumblr.m */,
+				54954D301547B20C00428BB5 /* IGUser.h */,
+				54954D311547B20C00428BB5 /* IGUser.m */,
+				54954D351547B27D00428BB5 /* IGBlog.h */,
+				54954D361547B27D00428BB5 /* IGBlog.m */,
+				542CB85B154942DF00318CE7 /* IGPost.h */,
+				542CB85C154942DF00318CE7 /* IGPost.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5481E0951549565D00C4439B /* ObjectiveTumblrTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5481E0A71549565E00C4439B /* Build configuration list for PBXNativeTarget "ObjectiveTumblrTest" */;
+			buildPhases = (
+				5481E0911549565D00C4439B /* Sources */,
+				5481E0921549565D00C4439B /* Frameworks */,
+				5481E0931549565D00C4439B /* Resources */,
+				5481E0941549565D00C4439B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveTumblrTest;
+			productName = ObjectiveTumblrTest;
+			productReference = 5481E0961549565D00C4439B /* ObjectiveTumblrTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		54954CEA1547A85100428BB5 /* ObjectiveTumblr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54954D0F1547A85100428BB5 /* Build configuration list for PBXNativeTarget "ObjectiveTumblr" */;
+			buildPhases = (
+				54954CE71547A85100428BB5 /* Sources */,
+				54954CE81547A85100428BB5 /* Frameworks */,
+				54954CE91547A85100428BB5 /* Resources */,
+				A1C0A8E6240B4DB2AEA86DCA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveTumblr;
+			productName = ObjectiveTumblr;
+			productReference = 54954CEB1547A85100428BB5 /* ObjectiveTumblr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54954CE21547A85100428BB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IG;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Ignition Soft Limited";
+			};
+			buildConfigurationList = 54954CE51547A85100428BB5 /* Build configuration list for PBXProject "ObjectiveTumblr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54954CE01547A85100428BB5;
+			productRefGroup = 54954CEC1547A85100428BB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54954CEA1547A85100428BB5 /* ObjectiveTumblr */,
+				5481E0951549565D00C4439B /* ObjectiveTumblrTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5481E0931549565D00C4439B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5481E0A01549565D00C4439B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54954CE91547A85100428BB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54954CFA1547A85100428BB5 /* InfoPlist.strings in Resources */,
+				54954D091547A85100428BB5 /* IGMasterViewController.xib in Resources */,
+				54954D0C1547A85100428BB5 /* IGDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5481E0941549565D00C4439B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A1C0A8E6240B4DB2AEA86DCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5481E0911549565D00C4439B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5481E0A31549565D00C4439B /* IGObjectiveTumblrSpecs.m in Sources */,
+				5481E0A91549570000C4439B /* IGObjectiveTumblr.m in Sources */,
+				5481E0AA1549570000C4439B /* IGUser.m in Sources */,
+				5481E0AB1549570000C4439B /* IGBlog.m in Sources */,
+				5481E0AC1549570000C4439B /* IGPost.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54954CE71547A85100428BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54954CFC1547A85100428BB5 /* main.m in Sources */,
+				54954D001547A85100428BB5 /* IGAppDelegate.m in Sources */,
+				54954D031547A85100428BB5 /* IGMasterViewController.m in Sources */,
+				54954D061547A85100428BB5 /* IGDetailViewController.m in Sources */,
+				54954D321547B20C00428BB5 /* IGUser.m in Sources */,
+				54954D371547B27D00428BB5 /* IGBlog.m in Sources */,
+				54954D3A1547B3D400428BB5 /* IGObjectiveTumblr.m in Sources */,
+				542CB85D154942DF00318CE7 /* IGPost.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5481E09E1549565D00C4439B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5481E09F1549565D00C4439B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54954CF81547A85100428BB5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54954CF91547A85100428BB5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54954D071547A85100428BB5 /* IGMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54954D081547A85100428BB5 /* en */,
+			);
+			name = IGMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		54954D0A1547A85100428BB5 /* IGDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54954D0B1547A85100428BB5 /* en */,
+			);
+			name = IGDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5481E0A51549565E00C4439B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A72F39E563458399741302 /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveTumblrTest/ObjectiveTumblrTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/JSONKit\"",
+					"\"${PODS_ROOT}/Headers/JTObjectMapping\"",
+					"\"${PODS_ROOT}/Headers/MKNetworkKit\"",
+					"\"${PODS_ROOT}/Headers/RSOAuthEngine\"",
+					"\"${PODS_ROOT}/Headers/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Specta\"",
+					"\"${PODS_ROOT}/MKNetworkKit/MKNetworkKit\"",
+				);
+				INFOPLIST_FILE = "ObjectiveTumblrTest/ObjectiveTumblrTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5481E0A61549565E00C4439B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A72F39E563458399741302 /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveTumblrTest/ObjectiveTumblrTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/JSONKit\"",
+					"\"${PODS_ROOT}/Headers/JTObjectMapping\"",
+					"\"${PODS_ROOT}/Headers/MKNetworkKit\"",
+					"\"${PODS_ROOT}/Headers/RSOAuthEngine\"",
+					"\"${PODS_ROOT}/Headers/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Specta\"",
+					"\"${PODS_ROOT}/MKNetworkKit/MKNetworkKit\"",
+				);
+				INFOPLIST_FILE = "ObjectiveTumblrTest/ObjectiveTumblrTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		54954D0D1547A85100428BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54954D0E1547A85100428BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54954D101547A85100428BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A72F39E563458399741302 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveTumblr/ObjectiveTumblr-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/MKNetworkKit\"",
+					"\"${PODS_ROOT}/Headers/RSOAuthEngine\"",
+					"\"${PODS_ROOT}/Headers/Reachability\"",
+					"\"${PODS_ROOT}/MKNetworkKit/MKNetworkKit\"",
+				);
+				INFOPLIST_FILE = "ObjectiveTumblr/ObjectiveTumblr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54954D111547A85100428BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A72F39E563458399741302 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveTumblr/ObjectiveTumblr-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/MKNetworkKit\"",
+					"\"${PODS_ROOT}/Headers/RSOAuthEngine\"",
+					"\"${PODS_ROOT}/Headers/Reachability\"",
+					"\"${PODS_ROOT}/MKNetworkKit/MKNetworkKit\"",
+				);
+				INFOPLIST_FILE = "ObjectiveTumblr/ObjectiveTumblr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5481E0A71549565E00C4439B /* Build configuration list for PBXNativeTarget "ObjectiveTumblrTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5481E0A51549565E00C4439B /* Debug */,
+				5481E0A61549565E00C4439B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54954CE51547A85100428BB5 /* Build configuration list for PBXProject "ObjectiveTumblr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54954D0D1547A85100428BB5 /* Debug */,
+				54954D0E1547A85100428BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54954D0F1547A85100428BB5 /* Build configuration list for PBXNativeTarget "ObjectiveTumblr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54954D101547A85100428BB5 /* Debug */,
+				54954D111547A85100428BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54954CE21547A85100428BB5 /* Project object */;
+}

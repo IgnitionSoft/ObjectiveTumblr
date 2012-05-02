@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ConciseKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ConciseKit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/homePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)homePath</Declaration>
+			
+			
+			<Anchor>//api/name/homePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/desktopPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)desktopPath</Declaration>
+			
+			
+			<Anchor>//api/name/desktopPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/documentPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)documentPath</Declaration>
+			
+			
+			<Anchor>//api/name/documentPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/appPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)appPath</Declaration>
+			
+			
+			<Anchor>//api/name/appPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/resourcePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)resourcePath</Declaration>
+			
+			
+			<Anchor>//api/name/resourcePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/swizzleMethod:with:in:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)swizzleMethod:(SEL)originalSelector with:(SEL)anotherSelector in:(Class)klass</Declaration>
+			
+			
+			<Anchor>//api/name/swizzleMethod:with:in:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/swizzleMethod:in:with:in:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)swizzleMethod:(SEL)originalSelector in:(Class)klass with:(SEL)anotherSelector in:(Class)anotherKlass</Declaration>
+			
+			
+			<Anchor>//api/name/swizzleMethod:in:with:in:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/swizzleClassMethod:with:in:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)swizzleClassMethod:(SEL)originalSelector with:(SEL)anotherSelector in:(Class)klass</Declaration>
+			
+			
+			<Anchor>//api/name/swizzleClassMethod:with:in:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/swizzleClassMethod:in:with:in:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)swizzleClassMethod:(SEL)originalSelector in:(Class)klass with:(SEL)anotherSelector in:(Class)anotherKlass</Declaration>
+			
+			
+			<Anchor>//api/name/swizzleClassMethod:in:with:in:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/waitUntil:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (void)waitUntil:(BOOL ( ^ ) ( void ))condition</Declaration>
+			
+			
+			<Anchor>//api/name/waitUntil:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/waitUntil:timeOut:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (void)waitUntil:(BOOL ( ^ ) ( void ))condition timeOut:(NSTimeInterval)timeOut</Declaration>
+			
+			
+			<Anchor>//api/name/waitUntil:timeOut:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ConciseKit/waitUntil:timeOut:interval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ConciseKit.h</DeclaredIn>			
+			
+			<Declaration>+ (void)waitUntil:(BOOL ( ^ ) ( void ))condition timeOut:(NSTimeInterval)timeOut interval:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/waitUntil:timeOut:interval:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
