@@ -1,0 +1,5 @@
+#include "Pods-ConciseKit.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/ConciseKit" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ConciseKit" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/JTObjectMapping" "${PODS_ROOT}/Headers/MKNetworkKit" "${PODS_ROOT}/Headers/OCMock" "${PODS_ROOT}/Headers/RSOAuthEngine" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/Specta"
+OTHER_LDFLAGS = -ObjC ${PODS_CONCISEKIT_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

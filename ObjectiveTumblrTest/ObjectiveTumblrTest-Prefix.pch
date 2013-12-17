@@ -1,12 +1,10 @@
 //
-// Prefix header for all source files of the 'ObjectiveTumblrTest' target in the 'ObjectiveTumblrTest' project
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
 //
 
 #ifdef __OBJC__
+    #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-
-#import "Specta/Specta.h"
-#define EXP_SHORTHAND
-#import "Expecta/Expecta.h"
-
 #endif

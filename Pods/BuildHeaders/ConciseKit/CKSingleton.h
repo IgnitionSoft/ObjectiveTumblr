@@ -1,0 +1,1 @@
+../../ConciseKit/src/CKSingleton.h

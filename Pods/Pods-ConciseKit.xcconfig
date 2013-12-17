@@ -1,0 +1,1 @@
+PODS_CONCISEKIT_OTHER_LDFLAGS = -framework Foundation
