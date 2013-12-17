@@ -1,11 +1,10 @@
 platform :ios
 
-dependency 'MKNetworkKit'
-dependency 'RSOAuthEngine'
-dependency 'JTObjectMapping'
-dependency 'JSONKit', '1.4'
+pod 'MKNetworkKit', '0.83'
+pod 'RSOAuthEngine', '1.0.0'
+pod 'JTObjectMapping'
 
-dependency 'Specta', '~> 0.1.4'
-dependency 'Expecta'
-dependency 'OCMock'
-dependency 'ConciseKit'
+pod 'Specta', '0.2.1'
+pod 'Expecta', '0.2.3'
+pod 'OCMock'
+pod 'ConciseKit'
