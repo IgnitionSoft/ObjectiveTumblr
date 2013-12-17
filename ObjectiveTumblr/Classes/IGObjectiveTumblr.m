@@ -11,7 +11,6 @@
 
 #import "JTObjectMapping/NSObject+JTObjectMapping.h"
 #import "JTObjectMapping/JTMappings.h"
-#import "JSONKit/JSONKit.h"
 
 NSString* const IGObjectiveTumblrApiBaseUrl = @"http://api.tumblr.com/v2";
 
@@ -39,7 +38,8 @@ NSString* const IGObjectiveTumblrApiBaseUrl = @"http://api.tumblr.com/v2";
     
     [op onCompletion:^(MKNetworkOperation *completedOperation) {
         NSData* data = [completedOperation responseData];
-        NSDictionary* dictionary = [[JSONDecoder decoder] objectWithData:data];
+        NSError* error;
+        NSDictionary* dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
         NSDictionary* userMap = [[dictionary objectForKey:@"response"] objectForKey:@"user"];
         IGUser* user = [IGUser objectFromJSONObject:userMap
                                             mapping:[IGUser mapping]];
